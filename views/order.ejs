@@ -1,0 +1,49 @@
+<!-- views/profile.ejs -->
+<%- include('head', {}); %>
+
+<body>
+    <script type="text/javascript">
+      var utag_data = {
+        page_name: "order", // Contains a user-friendly name for the page.
+       
+      };
+    </script>
+ 
+    <!-- Loading script asynchronously -->
+    <script type="text/javascript">
+      (function(a, b, c, d) {
+        a = "//tags.tiqcdn.com/utag/services-presentations/nam-ngo/prod/utag.js";
+        b = document;
+        c = "script";
+        d = b.createElement(c);
+        d.src = a;
+        d.type = "text/java" + c;
+        d.async = true;
+        a = b.getElementsByTagName(c)[0];
+        a.parentNode.insertBefore(d, a);
+      })();
+    </script>
+    <main role="main">
+        <header role="banner" class="page-header text-center">
+            <a id="coffee-logo" href="/menu"><img id="coffee-header" src="../img/icon_header.png" alt="coffee Icon"></a>
+            <h1 class="coffee-dash">Iterable Coffee</h1>
+        </header>
+        <form action="/order-coffee" method="post">
+        <section role="region" class="coffee-order">
+          <label><h3>Total Coffees Ordered: <%= coffees.length %></h3></label>
+        
+      </section>
+        <section role="region" class="coffee-order">
+            <button type="submit" class="btn-order"> Order a Coffee </button>
+          
+        </section>
+        </form>
+        <footer role="contentinfo" id="dash-footer">  
+            <a href="/logout">
+                <i id="logout" class="fas fa-sign-out-alt"></i>
+            </a>
+        </footer>
+    </main>
+    <%- include('scripts', {}); %>
+</body>
+</html>
