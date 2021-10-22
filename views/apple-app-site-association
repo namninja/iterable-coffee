@@ -3,9 +3,9 @@
       "apps": [],
       "details": [
         {
-          "appID": "M52JH43QS2.com.testerjohn.SADemoAppOne",
+          "appID": "454L9NG9J9.com.ReiterableCoffee.IterableCoffee",
           "paths": [
-            "/demo/*"
+            "/a/*"
           ]
         }
       ]
