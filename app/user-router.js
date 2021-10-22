@@ -2,6 +2,8 @@ const express = require("express");
 const router = express.Router();
 const passport = require("passport");
 const User = require("../app/models/user");
+const fs = require("fs");
+
 
 // route middleware to make sure a user is logged in
 function isLoggedIn(req, res, next) {
@@ -57,6 +59,15 @@ router.post(
     failureFlash: true // allow flash messages
   })
 );
+
+// show the apple-app-site-association file
+router.get("/apple-app-site-association", function(req, res) {
+  // render the page and pass in any flash data if it exists
+  fs.readFile('views/apple-app-site-association', 'utf8', (err, text) => {
+    res.end(text);
+  })
+  
+});
 
 // LOGOUT ==============================
 router.get("/logout", function(req, res) {
