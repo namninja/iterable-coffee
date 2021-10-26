@@ -5,7 +5,7 @@
         {
           "appID": "454L9NG9J9.com.ReiterableCoffee.IterableCoffee",
           "paths": [
-            "/mobile/*"
+            "/publicmenu/*"
           ]
         }
       ]
