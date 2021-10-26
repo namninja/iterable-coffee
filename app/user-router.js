@@ -68,7 +68,13 @@ router.get("/apple-app-site-association", function(req, res) {
   })
   
 });
-
+router.get("/publicmenu", function(req, res) {
+  // render the page and pass in any flash data if it exists
+  res.render("publicmenu.ejs", {
+    message: req.flash("public-menu"),
+  
+  });
+});
 // LOGOUT ==============================
 router.get("/logout", function(req, res) {
   req.logout();
