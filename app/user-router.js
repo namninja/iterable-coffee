@@ -68,6 +68,14 @@ router.get("/apple-app-site-association", function(req, res) {
   })
   
 });
+
+router.get("/preferences", function(req, res) {
+  // render the page and pass in any flash data if it exists
+  res.render("preferences.ejs", {
+    message: req.flash("preference-center"),
+  
+  });
+});
 router.get("/publicmenu", function(req, res) {
   // render the page and pass in any flash data if it exists
   res.render("publicmenu.ejs", {
@@ -103,6 +111,7 @@ router.get("/publicmenu/mocha", function(req, res) {
   
   });
 });
+
 // LOGOUT ==============================
 router.get("/logout", function(req, res) {
   req.logout();
