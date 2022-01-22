@@ -3,6 +3,7 @@ const router = express.Router();
 const passport = require("passport");
 const User = require("../app/models/user");
 const fs = require("fs");
+const axios = require('axios');
 
 
 // route middleware to make sure a user is logged in
@@ -12,6 +13,7 @@ function isLoggedIn(req, res, next) {
   // if they aren't redirect them to the home page
   res.redirect("/");
 }
+
 
 // HOME PAGE (with login links)
 router.get("/", function(req, res) {
@@ -92,12 +94,20 @@ router.get("/publicmenu", function(req, res) {
   });
 });
 router.get("/feed", function(req, res) {
+  console.log('ok1')
   // render the page and pass in any flash data if it exists
-  res.render("feed.ejs", {
-    message: req.flash("feed"),
-  
+  axios.get('https://www.dailycamera.com/wp-json/wp/v2/posts?categories=31&per_page=10')
+  .then(response => {
+    console.log(response.data[0]);
+    var feed = {data: response.data[0]}
+    res.setHeader('Content-Type', 'application/json');
+    res.end(JSON.stringify(feed));
+  })
+  .catch(error => {
+    console.log(error);
   });
-});
+  })
+  
 router.get("/publicmenu/coffee", function(req, res) {
   // render the page and pass in any flash data if it exists
   res.render("publicmenu.ejs", {
