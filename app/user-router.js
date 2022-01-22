@@ -76,6 +76,7 @@ router.get("/test.json", function(req, res) {
   })
   
 });
+
 router.get("/preferences", function(req, res) {
   // render the page and pass in any flash data if it exists
   res.render("preferences.ejs", {
@@ -87,6 +88,13 @@ router.get("/publicmenu", function(req, res) {
   // render the page and pass in any flash data if it exists
   res.render("publicmenu.ejs", {
     message: req.flash("public-menu"),
+  
+  });
+});
+router.get("/feed", function(req, res) {
+  // render the page and pass in any flash data if it exists
+  res.render("feed.ejs", {
+    message: req.flash("feed"),
   
   });
 });
