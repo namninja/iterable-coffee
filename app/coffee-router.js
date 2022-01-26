@@ -15,12 +15,12 @@ function isLoggedIn(req, res, next) {
 // Dashboard SECTION =====================
 // we will want this protected so you have to be logged in to visit
 // we will use route middleware to verify this (the isLoggedIn function)
-router.get("/menu", isLoggedIn, function(req, res) {
+router.get("/home", isLoggedIn, function(req, res) {
   Coffee.find({ user: req.user.id }, function(err, coffee) {
     if (err) {
       res.status(500).send(err);
     } else {
-      res.render("menu.ejs", {
+      res.render("home.ejs", {
         user: req.user,
         coffee: coffee
 
@@ -35,6 +35,20 @@ router.get("/order", isLoggedIn, function(req, res) {
       res.status(500).send(err);
     } else {
       res.render("order.ejs", {
+        user: req.user,
+        coffee: coffee
+
+        // get the user out of session and pass to template
+      });
+    }
+  });
+});
+router.get("/checkout", isLoggedIn, function(req, res) {
+  Coffee.find({ user: req.user.id }, function(err, coffee) {
+    if (err) {
+      res.status(500).send(err);
+    } else {
+      res.render("checkout.ejs", {
         user: req.user,
         coffee: coffee
 

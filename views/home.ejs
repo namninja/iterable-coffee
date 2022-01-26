@@ -10,8 +10,14 @@
         </header>
        
         <section role="region" class="coffee-order">
+          <h2>Welcome home!</h2>
+
+        <section role="region" class="coffee-order">
           <h2>Menu</h2>
           <h3><li>Coffee</li></h3>
+          <h3><li>Cappuccino</li></h3>
+          <h3><li>Latte</li></h3>
+          <h3><li>Mocha</li></h3>
         
       </section>
         <section role="region" class="coffee-order">
@@ -25,6 +31,19 @@
             </a>
         </footer>
     </main>
+    <script>
+      analytics.identify('SEGMENT001', {
+        email: 'nam.ngo+segment@iterable.com',
+        favoriteCafeBeverage: "mocha",
+        firstName: "Bob",
+        lastName: "Marley",
+        interests: ["music", "surfing", "soccer"]
+
+      });
+      analytics.track('login successful', {
+        event_source: 'Website'
+      });
+    </script>
     <%- include('scripts', {}); %>
 </body>
 </html>

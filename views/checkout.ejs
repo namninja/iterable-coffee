@@ -1,0 +1,54 @@
+<!-- views/profile.ejs -->
+<%- include('head', {}); %>
+
+<body>
+   
+    <main role="main">
+        <header role="banner" class="page-header text-center">
+            <a id="coffee-logo" href="/menu"><img id="coffee-header" src="../img/icon_header.png" alt="coffee Icon"></a>
+            <h1 class="coffee-dash">Iterable Coffee</h1>
+        </header>
+        <section role="region" class="coffee-order">
+          <h2>Thank you for your order</h2>
+          
+        
+      </section>
+        <footer role="contentinfo" id="dash-footer">  
+            <a href="/logout">
+                <i id="logout" class="fas fa-sign-out-alt"></i>
+            </a>
+        </footer>
+    </main>
+    <script>
+        analytics.identify('SEGMENT001', {
+          email: 'nam.ngo+segment@iterable.com'
+        });
+        analytics.track("Order Completed", {
+          email: "nam.ngo+segment@iterable.com",
+          products: [
+            {
+              id: "IC001",
+              name: "Coffee",
+              quantity: 1,
+              price: 5.00,
+              sku: "COF01",
+              description: "Plain Coffee", 
+              categories: ["hot","coffee","plain"]
+            },
+            {
+              id: "IC003", 
+              name: "Latte", 
+              price: 8.50, 
+              quantity: 1, 
+              sku: "LAT01", 
+              description: "Cafe Latte", 
+              categories: ["hot","espresso","milk"]
+            }
+          ],
+          total: 13.5,
+            campaignId: 3239897
+        });
+      </script>
+    <%- include('scripts', {}); %>
+</body>
+</html>
