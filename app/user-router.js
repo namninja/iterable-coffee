@@ -99,6 +99,14 @@ router.get("/test.json", function (req, res) {
   })
 
 });
+// show the test file
+router.get("/test2.json", function (req, res) {
+  // render the page and pass in any flash data if it exists
+  fs.readFile('views/test2.json', 'utf8', (err, text) => {
+    res.end(text);
+  })
+
+});
 
 router.get("/preferences", function (req, res) {
   // render the page and pass in any flash data if it exists
