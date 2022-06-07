@@ -1,160 +1,862 @@
 {
-    "data": [
-        {
-            "id": 1112924,
-            "shopify_graphql_id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8xOTMzODk1MjM3NjM3Nw==",
-            "title": "ZMan Jack Hammer Chatterbait 3/8 oz / Black/Blue",
-            "img_url": "https://cdn.shopify.com/s/files/1/0019/7895/7881/products/zman-jack-hammer-chatterbait-zman-jigs-bassjigs-bladed-12-oz-blackblue-5.jpg?v=1624479666",
-            "price": "15.99",
-            "compare_at_price": "0.00",
-            "on_sale": false,
-            "subcat_type_name": "jigs-bassjigs-bladed",
-            "brand": "zman",
-            "url": "https://www.omniafishing.com/p/zman-jack-hammer-chatterbait/color*black__blue--weight*3__8~oz",
-            "inventory": 83
+    "email": "glenn@seniorly.com",
+    "userId": "7064f2db25147fd847d693fa20f2a39e",
+    "dataFields": {
+        "phoneNumber": "+12017099238",
+        "conversionInfo": {
+            "action": "profileContacted",
+            "page": "/assisted-living/california/san-francisco/portola-gardens",
+            "entityType": "Property",
+            "entitySlug": "portola-gardens"
         },
-        {
-            "id": 1112924,
-            "shopify_graphql_id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8xOTMzODk1MjM3NjM3Nw==",
-            "title": "ZMan Jack Hammer Chatterbait 3/8 oz / Black/Blue",
-            "img_url": "https://cdn.shopify.com/s/files/1/0019/7895/7881/products/zman-jack-hammer-chatterbait-zman-jigs-bassjigs-bladed-12-oz-blackblue-5.jpg?v=1624479666",
-            "price": "15.99",
-            "compare_at_price": "0.00",
-            "on_sale": false,
-            "subcat_type_name": "jigs-bassjigs-bladed",
-            "brand": "zman",
-            "url": "https://www.omniafishing.com/p/zman-jack-hammer-chatterbait/color*black__blue--weight*3__8~oz",
-            "inventory": 83
+        "subscribedMessageTypeIds": [
+            75687
+        ],
+        "emailListIds": [
+            1590848,
+            1627773,
+            1627882,
+            1627886,
+            1643595
+        ],
+        "status": "Active",
+        "sentToZendesk": false,
+        "createdDate": "2022-03-29T16:11:53.088238Z",
+        "residentInfo": {},
+        "marketingInactive": false,
+        "otherText": "TEST",
+        "closedReason": "Other",
+        "referralInfo": {},
+        "city": "San Francisco",
+        "stage": "Closed",
+        "ip": "2601:646:4200:5290::b4ce",
+        "email": "glenn@seniorly.com",
+        "unsubscribedChannelIds": [],
+        "interestedCommunities": [
+            {
+                "name": "Portola Gardens",
+                "entityType": "Property",
+                "slug": "portola-gardens"
+            }
+        ],
+        "isPlusCommunityClient": false,
+        "startingRate": 3695,
+        "locationInfo": {
+            "tier": "3",
+            "state": "California",
+            "cityID": 2597,
+            "county": "SAN FRANCISCO",
+            "countyID": 2526,
+            "timeZone": "America/Los_Angeles",
+            "zipcodeID": 39636,
+            "city": "San Francisco",
+            "zipcode": "94134",
+            "stateID": 5,
+            "geo": {
+                "Latitude": 37.7202042,
+                "Longitude": -122.4099154
+            }
         },
-        {
-            "id": 1112924,
-            "shopify_graphql_id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8xOTMzODk1MjM3NjM3Nw==",
-            "title": "ZMan Jack Hammer Chatterbait 3/8 oz / Black/Blue",
-            "img_url": "https://cdn.shopify.com/s/files/1/0019/7895/7881/products/zman-jack-hammer-chatterbait-zman-jigs-bassjigs-bladed-12-oz-blackblue-5.jpg?v=1624479666",
-            "price": "15.99",
-            "compare_at_price": "0.00",
-            "on_sale": false,
-            "subcat_type_name": "jigs-bassjigs-bladed",
-            "brand": "zman",
-            "url": "https://www.omniafishing.com/p/zman-jack-hammer-chatterbait/color*black__blue--weight*3__8~oz",
-            "inventory": 83
+        "isCCRCCommunityClient": false,
+        "tags": [
+            "Closed",
+            "1st Contact Attempt",
+            "AgentMarketWorkflow",
+            "ContractCommunity",
+            "New",
+            "California",
+            "San Francisco",
+            "BayAreaDirect",
+            "Direct",
+            "Memory care (wandering risk, increased confusion, etc.)",
+            "Assisted Living"
+        ],
+        "uuid": "9f00a677-58cb-4879-a5a4-ef6554701c78",
+        "fullName": "Glenn Test 32922",
+        "entry": "communitySidebar",
+        "communicationInfo": {
+            "smsOptIn": false,
+            "emailOptout": false
         },
-        {
-            "id": 1112924,
-            "shopify_graphql_id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8xOTMzODk1MjM3NjM3Nw==",
-            "title": "ZMan Jack Hammer Chatterbait 3/8 oz / Black/Blue",
-            "img_url": "https://cdn.shopify.com/s/files/1/0019/7895/7881/products/zman-jack-hammer-chatterbait-zman-jigs-bassjigs-bladed-12-oz-blackblue-5.jpg?v=1624479666",
-            "price": "15.99",
-            "compare_at_price": "0.00",
-            "on_sale": false,
-            "subcat_type_name": "jigs-bassjigs-bladed",
-            "brand": "zman",
-            "url": "https://www.omniafishing.com/p/zman-jack-hammer-chatterbait/color*black__blue--weight*3__8~oz",
-            "inventory": 83
+        "campaignInfo": {
+            "clicks": [
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-04-18T22:57:54.645Z",
+                    "campaign": "campaign_-12345",
+                    "term": "b2c-newsletter-april-2022",
+                    "medium": "email",
+                    "content": "footer_website"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-04-22T03:10:01.645Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-1-pa",
+                    "medium": "email",
+                    "content": "hero_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-04-22T03:10:04.951Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-1-pa",
+                    "medium": "email",
+                    "content": "hero_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-04-27T01:37:08.062Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-04-27T02:16:58.979Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article3_cta"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-04-27T02:17:02.028Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article3_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-04-27T07:24:33.884Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-04-27T09:25:32.542Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article3_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-04-28T07:38:47.756Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-04-29T03:58:38.103Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-04-29T04:38:26.975Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-04-29T20:26:18.613Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-04-30T03:01:35.218Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-04-30T19:47:07.920Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-04-30T23:26:56.040Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-01T00:17:57.908Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-01T06:53:17.945Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-01T20:37:29.040Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-01T23:18:13.563Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-02T03:07:55.450Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-02T15:56:11.459Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-02T20:18:19.680Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-03T02:46:49.292Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-03T04:28:02.395Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-03T08:47:33.032Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "mc",
+                    "timestamp": "2022-05-03T21:10:44.699Z",
+                    "campaign": "seniorlyplus5322",
+                    "term": "seniorlyplus",
+                    "medium": "email",
+                    "content": "dellroad_cta"
+                },
+                {
+                    "source": "mc",
+                    "timestamp": "2022-05-03T22:52:59.050Z",
+                    "campaign": "seniorlyplus5322",
+                    "term": "seniorlyplus",
+                    "medium": "email",
+                    "content": "dellroad_image3"
+                },
+                {
+                    "source": "mc",
+                    "timestamp": "2022-05-03T22:53:02.423Z",
+                    "campaign": "seniorlyplus5322",
+                    "term": "seniorlyplus",
+                    "medium": "email",
+                    "content": "dellroad_cta"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-04T00:42:49.419Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-04T03:38:14.899Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-04T04:13:17.317Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-04T13:48:50.038Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-05T05:18:14.586Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-05T06:40:09.993Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-05T16:54:18.416Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-05T20:12:06.300Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-05T20:34:50.572Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-06T05:06:36.389Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-06T07:57:43.544Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-06T22:23:31.514Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-07T02:37:38.500Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-07T06:38:06.260Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-07T15:44:18.782Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-07T21:39:40.706Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-09T15:22:15.274Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-10T00:37:33.521Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-10T01:38:03.861Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-10T06:39:05.674Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-10T18:38:07.540Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-10T21:46:12.299Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-11T01:26:39.990Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-11T06:58:20.478Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-11T07:46:08.324Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-11T17:07:15.777Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-12T05:36:48.418Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-12T07:43:48.914Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-12T15:16:18.734Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-12T15:44:44.861Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-12T17:56:11.166Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-12T22:31:39.555Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-13T00:44:27.748Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-13T03:07:04.425Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-13T06:41:44.347Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-13T16:43:09.949Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-13T23:19:37.564Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-15T04:38:07.920Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-15T20:01:07.737Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-15T20:15:24.292Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-16T22:27:12.711Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-17T02:34:10.621Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-17T06:23:57.742Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-18T02:19:53.975Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-18T06:26:56.931Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-18T08:25:55.947Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-18T09:39:52.138Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-18T19:41:54.923Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-19T02:07:14.614Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-19T04:14:54.795Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-19T17:25:03.338Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-19T22:14:03.921Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-19T23:59:02.911Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-20T14:28:20.302Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-20T18:50:00.454Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-20T22:33:12.092Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-20T23:57:14.033Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                },
+                {
+                    "source": "Iterable",
+                    "timestamp": "2022-05-22T01:19:32.788Z",
+                    "campaign": "campaign_-12345",
+                    "term": "welcome-2-pa",
+                    "medium": "email",
+                    "content": "article1_image"
+                }
+            ]
         },
-        {
-            "id": 1112924,
-            "shopify_graphql_id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8xOTMzODk1MjM3NjM3Nw==",
-            "title": "ZMan Jack Hammer Chatterbait 3/8 oz / Black/Blue",
-            "img_url": "https://cdn.shopify.com/s/files/1/0019/7895/7881/products/zman-jack-hammer-chatterbait-zman-jigs-bassjigs-bladed-12-oz-blackblue-5.jpg?v=1624479666",
-            "price": "15.99",
-            "compare_at_price": "0.00",
-            "on_sale": false,
-            "subcat_type_name": "jigs-bassjigs-bladed",
-            "brand": "zman",
-            "url": "https://www.omniafishing.com/p/zman-jack-hammer-chatterbait/color*black__blue--weight*3__8~oz",
-            "inventory": 83
+        "waitListedDate": "0001-01-01T00:00:00Z",
+        "country": "United States",
+        "resumeDate": "0001-01-01T00:00:00Z",
+        "itblDS": {
+            "brandAffinityLabel": "loyal"
         },
-        {
-            "id": 1112924,
-            "shopify_graphql_id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8xOTMzODk1MjM3NjM3Nw==",
-            "title": "ZMan Jack Hammer Chatterbait 3/8 oz / Black/Blue",
-            "img_url": "https://cdn.shopify.com/s/files/1/0019/7895/7881/products/zman-jack-hammer-chatterbait-zman-jigs-bassjigs-bladed-12-oz-blackblue-5.jpg?v=1624479666",
-            "price": "15.99",
-            "compare_at_price": "0.00",
-            "on_sale": false,
-            "subcat_type_name": "jigs-bassjigs-bladed",
-            "brand": "zman",
-            "url": "https://www.omniafishing.com/p/zman-jack-hammer-chatterbait/color*black__blue--weight*3__8~oz",
-            "inventory": 83
+        "lastName": "Test 32922",
+        "firstName": "Glenn",
+        "signupDate": "2022-04-15 04:22:22 +00:00",
+        "dateCreated": "2022-03-29 16:11:53",
+        "clientMarket": "AgentMarketWorkflow",
+        "receivedSMSDisclaimer": true,
+        "profileUpdatedAt": "2022-05-26 00:16:47 +00:00",
+        "cta": "pricing",
+        "careInfo": {
+            "adls": [
+                "Memory Care (Wandering Risk, Increased Confusion, Etc.)"
+            ]
         },
-        {
-            "id": 1112924,
-            "shopify_graphql_id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8xOTMzODk1MjM3NjM3Nw==",
-            "title": "ZMan Jack Hammer Chatterbait 3/8 oz / Black/Blue",
-            "img_url": "https://cdn.shopify.com/s/files/1/0019/7895/7881/products/zman-jack-hammer-chatterbait-zman-jigs-bassjigs-bladed-12-oz-blackblue-5.jpg?v=1624479666",
-            "price": "15.99",
-            "compare_at_price": "0.00",
-            "on_sale": false,
-            "subcat_type_name": "jigs-bassjigs-bladed",
-            "brand": "zman",
-            "url": "https://www.omniafishing.com/p/zman-jack-hammer-chatterbait/color*black__blue--weight*3__8~oz",
-            "inventory": 83
+        "signupSource": "API",
+        "unsubscribedMessageTypeIds": [],
+        "user_geo_location": {
+            "lat": 37.7202042,
+            "lon": -122.4099154
         },
-        {
-            "id": 1112924,
-            "shopify_graphql_id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8xOTMzODk1MjM3NjM3Nw==",
-            "title": "ZMan Jack Hammer Chatterbait 3/8 oz / Black/Blue",
-            "img_url": "https://cdn.shopify.com/s/files/1/0019/7895/7881/products/zman-jack-hammer-chatterbait-zman-jigs-bassjigs-bladed-12-oz-blackblue-5.jpg?v=1624479666",
-            "price": "15.99",
-            "compare_at_price": "0.00",
-            "on_sale": false,
-            "subcat_type_name": "jigs-bassjigs-bladed",
-            "brand": "zman",
-            "url": "https://www.omniafishing.com/p/zman-jack-hammer-chatterbait/color*black__blue--weight*3__8~oz",
-            "inventory": 83
+        "region": "CA",
+        "expFlag": 4,
+        "convertedCommunity": {
+            "name": "Portola Gardens",
+            "entityType": "Property",
+            "slug": "portola-gardens"
         },
-        {
-            "id": 1112924,
-            "shopify_graphql_id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8xOTMzODk1MjM3NjM3Nw==",
-            "title": "ZMan Jack Hammer Chatterbait 3/8 oz / Black/Blue",
-            "img_url": "https://cdn.shopify.com/s/files/1/0019/7895/7881/products/zman-jack-hammer-chatterbait-zman-jigs-bassjigs-bladed-12-oz-blackblue-5.jpg?v=1624479666",
-            "price": "15.99",
-            "compare_at_price": "0.00",
-            "on_sale": false,
-            "subcat_type_name": "jigs-bassjigs-bladed",
-            "brand": "zman",
-            "url": "https://www.omniafishing.com/p/zman-jack-hammer-chatterbait/color*black__blue--weight*3__8~oz",
-            "inventory": 83
+        "welcomeJourney": "DidNotParticipate",
+        "recommendedAgent": {
+            "name": "Linda Iwamoto",
+            "entityType": "PartnerAgent",
+            "slug": "advocate-for-older-adults-linda-iwamoto-"
         },
-        {
-            "id": 1112924,
-            "shopify_graphql_id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8xOTMzODk1MjM3NjM3Nw==",
-            "title": "ZMan Jack Hammer Chatterbait 3/8 oz / Black/Blue",
-            "img_url": "https://cdn.shopify.com/s/files/1/0019/7895/7881/products/zman-jack-hammer-chatterbait-zman-jigs-bassjigs-bladed-12-oz-blackblue-5.jpg?v=1624479666",
-            "price": "15.99",
-            "compare_at_price": "0.00",
-            "on_sale": false,
-            "subcat_type_name": "jigs-bassjigs-bladed",
-            "brand": "zman",
-            "url": "https://www.omniafishing.com/p/zman-jack-hammer-chatterbait/color*black__blue--weight*3__8~oz",
-            "inventory": 83
+        "financialInfo": {},
+        "referredClients": [
+            {
+                "otherText": "TEST",
+                "closedReason": "Other",
+                "slug": "1801bc5b277eea364780788b065b21f5",
+                "providerId": "portola-gardens",
+                "status": "Active",
+                "providerType": "Property",
+                "createdAt": "2022-03-30T14:02:04.110846Z",
+                "stage": "New",
+                "updatedAt": "2022-03-30T14:02:09.885674Z"
+            }
+        ],
+        "moveInDate": "0001-01-01T00:00:00Z",
+        "userId": "7064f2db25147fd847d693fa20f2a39e",
+        "dateUpdated": "2022-05-26 00:12:13",
+        "isAACommunityClient": false,
+        "housingInfo": {
+            "typeCare": [
+                "Assisted Living"
+            ],
+            "communitySize": [
+                "51 +"
+            ]
         },
-        {
-            "id": 1112924,
-            "shopify_graphql_id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8xOTMzODk1MjM3NjM3Nw==",
-            "title": "ZMan Jack Hammer Chatterbait 3/8 oz / Black/Blue",
-            "img_url": "https://cdn.shopify.com/s/files/1/0019/7895/7881/products/zman-jack-hammer-chatterbait-zman-jigs-bassjigs-bladed-12-oz-blackblue-5.jpg?v=1624479666",
-            "price": "15.99",
-            "compare_at_price": "0.00",
-            "on_sale": false,
-            "subcat_type_name": "jigs-bassjigs-bladed",
-            "brand": "zman",
-            "url": "https://www.omniafishing.com/p/zman-jack-hammer-chatterbait/color*black__blue--weight*3__8~oz",
-            "inventory": 83
+        "metaData": {
+            "validPhone": true,
+            "additionalMetaData": [
+                "PhoneValidated",
+                "ValidPhone",
+                "EmailValidated",
+                "InvalidEmail",
+                "ContractCommunity",
+                "ProviderConnected",
+                "ReferralSent"
+            ]
         },
-        {
-            "id": 1112924,
-            "shopify_graphql_id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8xOTMzODk1MjM3NjM3Nw==",
-            "title": "ZMan Jack Hammer Chatterbait 3/8 oz / Black/Blue",
-            "img_url": "https://cdn.shopify.com/s/files/1/0019/7895/7881/products/zman-jack-hammer-chatterbait-zman-jigs-bassjigs-bladed-12-oz-blackblue-5.jpg?v=1624479666",
-            "price": "15.99",
-            "compare_at_price": "0.00",
-            "on_sale": false,
-            "subcat_type_name": "jigs-bassjigs-bladed",
-            "brand": "zman",
-            "url": "https://www.omniafishing.com/p/zman-jack-hammer-chatterbait/color*black__blue--weight*3__8~oz",
-            "inventory": 83
+        "estimatedMoveInDate": "0001-01-01T00:00:00Z",
+        "userType": "Client",
+        "updatedDate": "2022-03-30T14:02:08.376078Z",
+        "referralSource": "Online",
+        "isSNFCommunityClient": false,
+        "timeZone": "America/Los_Angeles",
+        "itblInternal": {
+            "documentCreatedAt": "2022-04-15 04:22:22 +00:00",
+            "regionCode": "US",
+            "emailDomain": "seniorly.com",
+            "documentUpdatedAt": "2022-05-26 00:16:47 +00:00"
         }
-    ]
+    }
 }
