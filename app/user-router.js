@@ -12,12 +12,33 @@ function isLoggedIn(req, res, next) {
   if (req.isAuthenticated()) return next();
   // if they aren't redirect them to the home page
   res.redirect("/");
+
 }
 
 
 // HOME PAGE (with login links)
-router.get("/", function(req, res) {
+router.get("/", function (req, res) {
+  console.log("here")
+  axios.post('https://jwt-generator.stg-itbl.co/generate',
+    {
+      exp_minutes: 15,
+      email: "nam.ngo+web@iterable.com",
+      jwt_secret: "482bad84f4271d482f9d4857bbd217c2031af4ff090434ae9bd517b8a75db1e37f4acd5631645293644d99c8c5a0648a9811b25f41beb68536091dad986f4f39"
+    },
+    {
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    }
+  )
+    .then(response => {
+      console.log(response.data.token);
+    })
+    .catch(error => {
+      console.log(error);
+    });
   res.render("index.ejs", { user: req.user }); // load the index.ejs file
+
 });
 
 // =============================================================================
@@ -25,7 +46,7 @@ router.get("/", function(req, res) {
 // =============================================================================
 
 // show the login form
-router.get("/login", function(req, res) {
+router.get("/login", function (req, res) {
   // render the page and pass in any flash data if it exists
   res.render("login.ejs", {
     message: req.flash("loginMessage"),
@@ -44,7 +65,7 @@ router.post(
 );
 
 // show the signup form
-router.get("/signup", function(req, res) {
+router.get("/signup", function (req, res) {
   // render the page and pass in any flash data if it exists
   res.render("signup.ejs", {
     message: req.flash("signupMessage"),
@@ -63,82 +84,82 @@ router.post(
 );
 
 // show the apple-app-site-association file
-router.get("/apple-app-site-association", function(req, res) {
+router.get("/apple-app-site-association", function (req, res) {
   // render the page and pass in any flash data if it exists
   fs.readFile('views/apple-app-site-association', 'utf8', (err, text) => {
     res.end(text);
   })
-  
+
 });
 // show the test file
-router.get("/test.json", function(req, res) {
+router.get("/test.json", function (req, res) {
   // render the page and pass in any flash data if it exists
   fs.readFile('views/test.json', 'utf8', (err, text) => {
     res.end(text);
   })
-  
+
 });
 
-router.get("/preferences", function(req, res) {
+router.get("/preferences", function (req, res) {
   // render the page and pass in any flash data if it exists
   res.render("preferences.ejs", {
     message: req.flash("preference-center"),
-  
+
   });
 });
-router.get("/publicmenu", function(req, res) {
+router.get("/publicmenu", function (req, res) {
   // render the page and pass in any flash data if it exists
   res.render("publicmenu.ejs", {
     message: req.flash("public-menu"),
-  
+
   });
 });
-router.get("/feed", function(req, res) {
+router.get("/feed", function (req, res) {
   console.log('ok1')
   // render the page and pass in any flash data if it exists
   axios.get('https://www.dailycamera.com/wp-json/wp/v2/posts?categories=31&per_page=10')
-  .then(response => {
-    console.log(response.data[0]);
-    var feed = {data: response.data[0]}
-    res.setHeader('Content-Type', 'application/json');
-    res.end(JSON.stringify(feed));
-  })
-  .catch(error => {
-    console.log(error);
-  });
-  })
-  
-router.get("/publicmenu/coffee", function(req, res) {
+    .then(response => {
+      console.log(response.data[0]);
+      var feed = { data: response.data[0] }
+      res.setHeader('Content-Type', 'application/json');
+      res.end(JSON.stringify(feed));
+    })
+    .catch(error => {
+      console.log(error);
+    });
+})
+
+router.get("/publicmenu/coffee", function (req, res) {
   // render the page and pass in any flash data if it exists
   res.render("publicmenu.ejs", {
     message: req.flash("public-menu"),
-  
-  });
-});
-router.get("/publicmenu/cappuccino", function(req, res) {
-  // render the page and pass in any flash data if it exists
-  res.render("publicmenu.ejs", {
-    message: req.flash("public-menu"),
-  
+
   });
 });
-router.get("/publicmenu/latte", function(req, res) {
+router.get("/publicmenu/cappuccino", function (req, res) {
   // render the page and pass in any flash data if it exists
   res.render("publicmenu.ejs", {
     message: req.flash("public-menu"),
-  
+
   });
 });
-router.get("/publicmenu/mocha", function(req, res) {
+router.get("/publicmenu/latte", function (req, res) {
   // render the page and pass in any flash data if it exists
   res.render("publicmenu.ejs", {
     message: req.flash("public-menu"),
-  
+
+  });
+});
+router.get("/publicmenu/mocha", function (req, res) {
+  // render the page and pass in any flash data if it exists
+  res.render("publicmenu.ejs", {
+    message: req.flash("public-menu"),
+
   });
 });
 
 // LOGOUT ==============================
-router.get("/logout", function(req, res) {
+router.get("/logout", function (req, res) {
   req.logout();
   res.redirect("/");
 });

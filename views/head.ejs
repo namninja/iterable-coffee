@@ -1,30 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" name="description" content="coffee order" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Reiterable Coffee</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Lato|Roboto|Baloo+Tamma"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css"
-      rel="stylesheet"
-    />
-    <link href="/main.css" rel="stylesheet" type="text/css" />
-    <script>
-      !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics._writeKey="aS6e07Fb2XXxrC27g1w8LFZXV1CxpESm";;analytics.SNIPPET_VERSION="4.15.3";
-      analytics.load("aS6e07Fb2XXxrC27g1w8LFZXV1CxpESm");
-      analytics.page();
-      }}();
-    </script>
-  </head>
+
+<head>
+  <meta charset="utf-8" name="description" content="coffee order" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reiterable Coffee</title>
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Lato|Roboto|Baloo+Tamma"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css" rel="stylesheet" />
+  <link href="/main.css" rel="stylesheet" type="text/css" />
+  <script>
+    !function () {
+      var analytics = window.analytics = window.analytics || []; if (!analytics.initialize) if (analytics.invoked) window.console && console.error && console.error("Segment snippet included twice."); else {
+        analytics.invoked = !0; analytics.methods = ["trackSubmit", "trackClick", "trackLink", "trackForm", "pageview", "identify", "reset", "group", "track", "ready", "alias", "debug", "page", "once", "off", "on", "addSourceMiddleware", "addIntegrationMiddleware", "setAnonymousId", "addDestinationMiddleware"]; analytics.factory = function (e) { return function () { var t = Array.prototype.slice.call(arguments); t.unshift(e); analytics.push(t); return analytics } }; for (var e = 0; e < analytics.methods.length; e++) { var key = analytics.methods[e]; analytics[key] = analytics.factory(key) } analytics.load = function (key, e) { var t = document.createElement("script"); t.type = "text/javascript"; t.async = !0; t.src = "https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js"; var n = document.getElementsByTagName("script")[0]; n.parentNode.insertBefore(t, n); analytics._loadOptions = e }; analytics._writeKey = "aS6e07Fb2XXxrC27g1w8LFZXV1CxpESm";; analytics.SNIPPET_VERSION = "4.15.3";
+        analytics.load("aS6e07Fb2XXxrC27g1w8LFZXV1CxpESm");
+        analytics.page();
+      }
+    }();
+  </script>
+  <script type="text/javascript">
+    !function () {
+      var e = window.rudderanalytics = window.rudderanalytics || []; e.methods = ["load", "page", "track", "identify", "alias", "group", "ready", "reset", "getAnonymousId", "setAnonymousId"], e.factory = function (t) { return function () { var r = Array.prototype.slice.call(arguments); return r.unshift(t), e.push(r), e } }; for (var t = 0; t < e.methods.length; t++) { var r = e.methods[t]; e[r] = e.factory(r) } e.loadJS = function (e, t) { var r = document.createElement("script"); r.type = "text/javascript", r.async = !0, r.src = "https://cdn.rudderlabs.com/v1.1/rudder-analytics.min.js"; var a = document.getElementsByTagName("script")[0]; a.parentNode.insertBefore(r, a) }, e.loadJS(),
+        e.load("257DyzBGwK7WoorMyhe8R6qNH5z", "https://iterablenutml.dataplane.rudderstack.com"),
+        e.page()
+    }();
+  </script> 
+  <script type="text/javascript">
+
+    //configure the SDK
+    window.mParticle = {
+      config: {
+        isDevelopmentMode: true,
+        identifyRequest: {
+          userIdentities: {
+            email: 'nam.ngo+mpart2@iterable.com',
+            customerid: 'mpart2',
+          },
+        },
+        identityCallback: function (result) {
+          // Do something once an identity call has been made.
+          // For more information, see https://docs.mparticle.com/developers/sdk/web/idsync/#sdk-initialization-and-identify
+          console.log(result);
+          console.log("I'm in the call back");
+          // if (result.httpCode == 200) {
+          //   if (result.getUser()) {
+          //     result.getUser().setUserAttribute('isLoyaltyMember', true);
+          //     result.getUser().setUserAttribute('LoyaltyMemberSince', '2023-09-26 12:13:35');
+          //     result.getUser().setUserAttribute('firstName', 'Sebastien');
+          //     result.getUser().setUserAttribute('lastName', 'Malbois');
 
 
+              // mParticle.logEvent('Redeemed a reward', mParticle.EventType.Navigation, {
+              //   chilliesAmount: 3
+              // });
+          //   }
+          // }
+        },
+      },
+    };
+
+    //load the SDK
+    (
+      function (t) { window.mParticle = window.mParticle || {}; window.mParticle.EventType = { Unknown: 0, Navigation: 1, Location: 2, Search: 3, Transaction: 4, UserContent: 5, UserPreference: 6, Social: 7, Other: 8 }; window.mParticle.eCommerce = { Cart: {} }; window.mParticle.Identity = {}; window.mParticle.config = window.mParticle.config || {}; window.mParticle.config.rq = []; window.mParticle.config.snippetVersion = 2.3; window.mParticle.ready = function (t) { window.mParticle.config.rq.push(t) }; var e = ["endSession", "logError", "logBaseEvent", "logEvent", "logForm", "logLink", "logPageView", "setSessionAttribute", "setAppName", "setAppVersion", "setOptOut", "setPosition", "startNewSession", "startTrackingLocation", "stopTrackingLocation"]; var o = ["setCurrencyCode", "logCheckout"]; var i = ["identify", "login", "logout", "modify"]; e.forEach(function (t) { window.mParticle[t] = n(t) }); o.forEach(function (t) { window.mParticle.eCommerce[t] = n(t, "eCommerce") }); i.forEach(function (t) { window.mParticle.Identity[t] = n(t, "Identity") }); function n(e, o) { return function () { if (o) { e = o + "." + e } var t = Array.prototype.slice.call(arguments); t.unshift(e); window.mParticle.config.rq.push(t) } } var dpId, dpV, config = window.mParticle.config, env = config.isDevelopmentMode ? 1 : 0, dbUrl = "?env=" + env, dataPlan = window.mParticle.config.dataPlan; dataPlan && (dpId = dataPlan.planId, dpV = dataPlan.planVersion, dpId && (dpV && (dpV < 1 || dpV > 1e3) && (dpV = null), dbUrl += "&plan_id=" + dpId + (dpV ? "&plan_version=" + dpV : ""))); var mp = document.createElement("script"); mp.type = "text/javascript"; mp.async = true; mp.src = ("https:" == document.location.protocol ? "https://jssdkcdns" : "http://jssdkcdn") + ".mparticle.com/js/v2/" + t + "/mparticle.js" + dbUrl; var c = document.getElementsByTagName("script")[0]; c.parentNode.insertBefore(mp, c) }
+    )("us1-21ae79eec75cdd4d8ea9e54a75ceb5e2");
+  </script>
+  <!-- <script type="text/javascript">
+    window.mParticle = {
+      config: {
+        isDevelopmentMode: true //switch to false (or remove) for production
+      }
+    };
+    (
+      function(t){window.mParticle=window.mParticle||{};window.mParticle.EventType={Unknown:0,Navigation:1,Location:2,Search:3,Transaction:4,UserContent:5,UserPreference:6,Social:7,Other:8};window.mParticle.eCommerce={Cart:{}};window.mParticle.Identity={};window.mParticle.config=window.mParticle.config||{};window.mParticle.config.rq=[];window.mParticle.config.snippetVersion=2.2;window.mParticle.ready=function(t){window.mParticle.config.rq.push(t)};var e=["endSession","logError","logBaseEvent","logEvent","logForm","logLink","logPageView","setSessionAttribute","setAppName","setAppVersion","setOptOut","setPosition","startNewSession","startTrackingLocation","stopTrackingLocation"];var o=["setCurrencyCode","logCheckout"];var i=["identify","login","logout","modify"];e.forEach(function(t){window.mParticle[t]=n(t)});o.forEach(function(t){window.mParticle.eCommerce[t]=n(t,"eCommerce")});i.forEach(function(t){window.mParticle.Identity[t]=n(t,"Identity")});function n(e,o){return function(){if(o){e=o+"."+e}var t=Array.prototype.slice.call(arguments);t.unshift(e);window.mParticle.config.rq.push(t)}}var mp=document.createElement("script");mp.type="text/javascript";mp.async=true;mp.src=("https:"==document.location.protocol?"https://jssdkcdns":"http://jssdkcdn")+".mparticle.com/js/v2/"+t+"/mparticle.js";var c=document.getElementsByTagName("script")[0];c.parentNode.insertBefore(mp,c)}
+    )("us1-21ae79eec75cdd4d8ea9e54a75ceb5e2");
+  </script>
+  <script>
+  window.mParticle.ready(
+    function() {
+      console.log('mParticle has loaded!');
+       // !! Note: do not attempt to access the user object at this point
+       // !! var user = window.mParticle.Identity.getCurrentUser();
+       // !! Instead, access the user object via the mParticle.config.identityCallback option
+  var identityRequest = {
+    userIdentities: {
+      email: 'nam.ngo+mpart3@iterable.com',
+      customerid: 'mpart3'    
+    }
+  };
+  var identityCallback = function(result) { 
+    if (result.httpCode == 200) {
+    if (result.getUser()) { 
+      result.getUser().setUserAttribute('isLoyaltyMember', true); 
+      result.getUser().setUserAttribute('LoyaltyMemberSince', '2023-09-26 12:13:35');
+      result.getUser().setUserAttribute('firstName', 'Sebastien');
+      result.getUser().setUserAttribute('lastName', 'Malbois');
+  
+  
+  mParticle.logEvent('Redeemed a reward', mParticle.EventType.Navigation, {
+      chilliesAmount: 3
+  });
+  
+  
+      // 1. Create the product
+  var product1 = mParticle.eCommerce.createProduct(
+      'Houmous with PERi-PERi Drizzle',  // Name
+      '1',                   // SKU
+      3.95,                     // Price
+      1                           // Quantity
+  );
+  
+  var product2 = mParticle.eCommerce.createProduct(
+      'Chicken Butterfly',
+      '5', 
+      8.25, 
+      1
+  );
+  
+  // 2. Summarize the transaction
+  var transactionAttributes = {
+      Id: 'foo-transaction-id',
+      Revenue: 12.20,
+      Tax: 30
+  };
+  
+  // 3. Log the purchase event (optional custom attributes an custom flags depending on your );
+  var customAttributes = null; // if not passing any custom attributes, pass null
+  var customFlags = null; // if not passing any custom flags, pass null
+  
+  mParticle.eCommerce.logProductAction(
+      mParticle.ProductActionType.Purchase,
+      [product1, product2],
+      customAttributes,
+      customFlags,
+      transactionAttributes);
+  
+  //mParticle.logEvent('subscriptionsUpdated', mParticle.EventType.UserPreference, {
+  //    emailListIds: 1198603,
+  //    unsubscribedChannelIds: 51297, 
+  //    unsubscribedMessageTypeIds: 62534,
+  //    campaignId: 2915777, 
+  //    templateId: 3995505
+  //});
+  }
+    } 
+  };
+  mParticle.Identity.login({
+    userIdentities: {
+      email: 'nam.ngo+mpart3@iterable.com',
+      customerid: 'mpart3'    
+    }
+  }, identityCallback);
+  
+  
+  
+  mParticle.Identity.logout({
+    userIdentities: {
+      email: 'nam.ngo+mpart3@iterable.com',
+      customerid: 'mpart3'    
+    }
+  }, identityCallback);
+    }
+  
+  
+  );
+  
+  
+  
+  </script> -->
+  
+</head>

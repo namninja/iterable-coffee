@@ -1,25 +1,33 @@
 <%- include('head', {}); %>
 
-<body>
-   
-    <main role="main" id="main-index">
-        
-        <section role="region" class="landing-content">
-        
-        </section>
-        <footer role="contentinfo" class="landing-auth">
-            
-            <div id="auth-btns"></div>
-            <a href="/login" class="btn">Log in</a>
-            <a href="/signup" class="btn signup">Sign up</a>
-            </div>
-            <div id="copyright">
-                <hr />
-                <a href="https://github.com/namninja" target="_blank"><i class="fab fa-github"> Nam Ninja</i></a>
-            </div>
-        </footer>
-    </main>
-    
-    <%- include('scripts', {}); %>
-</body>
-</html>
+    <body>
+
+        <main role="main" id="main-index">
+
+            <section role="region" class="landing-content">
+
+            </section>
+            <footer role="contentinfo" class="landing-auth">
+
+                <div id="auth-btns"></div>
+                <a href="/login" class="btn">Log in</a>
+                <a href="/signup" class="btn signup">Sign up</a>
+                </div>
+                <div id="copyright">
+                    <hr />
+                    <a href="https://github.com/namninja" target="_blank"><i class="fab fa-github"> Nam Ninja</i></a>
+                </div>
+            </footer>
+        </main>
+        <script>
+
+            mParticle.logEvent(
+                'mparticle_test',
+                mParticle.EventType.Navigation,
+                {}
+            );
+        </script>
+        <%- include('scripts', {}); %>
+    </body>
+
+    </html>
