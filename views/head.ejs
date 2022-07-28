@@ -2,6 +2,72 @@
 <html lang="en">
 
 <head>
+  <script>
+    window.SEGMENT_API_KEY = 'qD0k4dfDDBwocsA9I4GoYjmaTOMtqOfu'
+    window.ITERABLE_WEB_IDENTIFIER = 'com.namngo.webinapptest'
+    window.ITERABLE_EMAIL = 'nam.ngo+web@iterable.com'
+    window.ITERABLE_API_KEY = '9817effb62d1435e9d4c54a65eaf2f7d'
+    window.ITERABLE_JWT_SECRET = '9e281091a6916184f0f4e719a4ac8fecb1b00d486640da22b15120c3188695d6307467e06614bee84c10352e65b622ef83e183f819d1c36feb4d9d732134f39f'
+  </script>
+  <script>
+    window.setrule = function setRule(ruleName) {
+      var rule = document.createElement("div");
+      rule.setAttribute("id", ruleName);
+      rule.setAttribute("style", "display:none");
+      rule.setAttribute("digioh", "digioh_rule");
+      window.parent.document.body.appendChild(rule);
+    }
+  </script>
+ <link rel="manifest" href="/manifest.json"/>
+ <script src="https://www.gstatic.com/firebasejs/9.9.1/firebase-analytics.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/9.9.1/firebase-messaging.js"></script>
+ <script>
+ 
+  
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyDoUqGAfBBuuqqpIjyfLQT8MfB4PXD9Nh8",
+    authDomain: "iterablecoffee.firebaseapp.com",
+    projectId: "iterablecoffee",
+    storageBucket: "iterablecoffee.appspot.com",
+    messagingSenderId: "675775245867",
+    appId: "1:675775245867:web:5be24a5b4569f694bb846e",
+    measurementId: "G-CDYFMMM4BR"
+  };
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const messaging = firebase.messaging;
+
+  function InitializeFirebaseMessaging() {
+    messaging
+    .requestPermission()
+    .then(function () {
+      console.log("Notification Permission")
+    })
+    .then(function (token) {
+      console.log("token: " + token)
+    })
+    .catch(function (reason) {
+      console.log(reason)
+    })
+  }
+  messaging.onMessage(function (payload) {
+    console.log(payload);
+  });
+  messaging.onTokenRefresh(function () {
+    messaging.getToken()
+    .then(function (newToken) {
+      console.log("New Token: " + newToken)
+    }).catch(function (reason) {
+      console.log(reason)
+    })
+  })
+  InitializeFirebaseMessaging();
+</script>
+<script src="firebase-coffee.js" type="text/javascript"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
   <meta charset="utf-8" name="description" content="coffee order" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Reiterable Coffee</title>
@@ -26,7 +92,23 @@
         e.load("257DyzBGwK7WoorMyhe8R6qNH5z", "https://iterablenutml.dataplane.rudderstack.com"),
         e.page()
     }();
-  </script> 
+  </script>
+  <!--START Lightbox Javascript-->
+  <script async type='text/javascript'
+    src='https://www.lightboxcdn.com/vendor/9cd457f2-5b1c-4a84-9ab7-7f9bbfb7608a/lightbox_inline.js'></script>
+  <!--END Lightbox Javascript-->
+  <script src="https://unpkg.com/@iterable/web-sdk/index.js"></script>
+  <script>
+    //Segment Script Start
+    !function () {
+      var analytics = window.analytics = window.analytics || []; if (!analytics.initialize) if (analytics.invoked) window.console && console.error && console.error("Segment snippet included twice."); else {
+        analytics.invoked = !0; analytics.methods = ["trackSubmit", "trackClick", "trackLink", "trackForm", "pageview", "identify", "reset", "group", "track", "ready", "alias", "debug", "page", "once", "off", "on", "addSourceMiddleware", "addIntegrationMiddleware", "setAnonymousId", "addDestinationMiddleware"]; analytics.factory = function (e) { return function () { var t = Array.prototype.slice.call(arguments); t.unshift(e); analytics.push(t); return analytics } }; for (var e = 0; e < analytics.methods.length; e++) { var key = analytics.methods[e]; analytics[key] = analytics.factory(key) } analytics.load = function (key, e) { var t = document.createElement("script"); t.type = "text/javascript"; t.async = !0; t.src = "https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js"; var n = document.getElementsByTagName("script")[0]; n.parentNode.insertBefore(t, n); analytics._loadOptions = e }; analytics._writeKey = SEGMENT_API_KEY;; analytics.SNIPPET_VERSION = "4.15.3";
+        analytics.load(SEGMENT_API_KEY);
+        analytics.page();
+      }
+    }();
+    //Segment Script End
+  </script>
   <script type="text/javascript">
 
     //configure the SDK
@@ -52,9 +134,9 @@
           //     result.getUser().setUserAttribute('lastName', 'Malbois');
 
 
-              // mParticle.logEvent('Redeemed a reward', mParticle.EventType.Navigation, {
-              //   chilliesAmount: 3
-              // });
+          // mParticle.logEvent('Redeemed a reward', mParticle.EventType.Navigation, {
+          //   chilliesAmount: 3
+          // });
           //   }
           // }
         },
@@ -169,5 +251,5 @@
   
   
   </script> -->
-  
+
 </head>

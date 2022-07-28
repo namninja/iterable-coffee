@@ -1,0 +1,558 @@
+[
+    {
+        "id": 1207363,
+        "date": "2022-06-14T15:26:33",
+        "date_gmt": "2022-06-14T21:26:33",
+        "guid": {
+            "rendered": "https://www.dailycamera.com/?p=1207363"
+        },
+        "modified": "2022-06-14T15:26:52",
+        "modified_gmt": "2022-06-14T21:26:52",
+        "slug": "two-people-arrested-in-connection-with-string-of-armed-robberies-in-longmont",
+        "status": "publish",
+        "type": "post",
+        "link": "https://www.dailycamera.com/2022/06/14/two-people-arrested-in-connection-with-string-of-armed-robberies-in-longmont/",
+        "title": {
+            "rendered": "Two people arrested in connection with string of armed robberies in Longmont"
+        },
+        "content": {
+            "rendered": "<p>Two people have been charged in connection with a string of armed robberies in Longmont, including the hotel where one of the suspects used to work.</p>\n<p>Kenny Espinoza, 22, and Nija Droessler, 21, were arrested on suspicion of aggravated robbery, robbery of an at-risk person, felony menacing, theft from an at-risk person and theft. Espinoza is also facing an additional count of violation of a protection order that Droessler had against him.</p>\n<p>According to an affidavit, Longmont police were called to a Super 8 Motel at 2446 Main St. on Friday for a report of an armed robbery.</p>\n<p>The night clerk said he let two people in who then proceeded to point a gun at his head and to demand he give them the cash drawer, which had about $300 in it.</p>\n<p>Police reviewed surveillance footage and noted the disguises the two suspects were wearing — including masks, caps and wigs — matched similar robberies at that Super 8 Motel and a Holiday Inn in late 2021.</p>\n<p>Other employees of the motel also reviewed the security footage and were able to identify one of the suspects as Espinoza, who had been an employee at the Super 8. In the surveillance footage, it is Espinoza who appears to put the gun to the head of the clerk, according to the affidavit.</p>\n<p>Police went to Espinoza&#8217;s address and placed him into custody, along with Droessler.</p>\n<p>Droessler confessed to helping Espinoza with the robberies, and told police what they were wearing at the time.</p>\n<p>A search of the apartment also turned up wigs and caps that matched those seen in the surveillance footage. A BB gun matching the weapon used in the robberies was also found on scene.</p>\n<p>Both Espinoza and Droessler were then arrested, and Espinoza is set for a hearing on July 1 while Droessler will appear on June 27.</p>\n<p>Espinoza also has a pending felony menacing case in Boulder County, and has a prior conviction for felony menacing and harassment for which he was on probation.</p>\n<p>Espinoza is being held on $100,000 bond, while Droessler was released on a $500 cash bond.</p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>Two people have been charged in connection with a string of armed robberies in Longmont, including the hotel where one of the suspects used to work.</p>\n",
+            "protected": false
+        },
+        "author": 100,
+        "featured_media": 1207361,
+        "comment_status": "open",
+        "ping_status": "closed",
+        "sticky": false,
+        "template": "",
+        "format": "standard",
+        "meta": {
+            "spay_email": "",
+            "subheadline": "",
+            "jetpack_publicize_message": "",
+            "jetpack_is_tweetstorm": false,
+            "jetpack_publicize_feature_enabled": true
+        },
+        "categories": [
+            41,
+            31,
+            33,
+            32
+        ],
+        "tags": [],
+        "feature": [],
+        "location": [
+            171,
+            148,
+            149,
+            178
+        ],
+        "type-of-work": [],
+        "jetpack_publicize_connections": [],
+        "parsely": {
+            "version": "1.1.0",
+            "meta": {
+                "@context": "https://schema.org",
+                "@type": "NewsArticle",
+                "mainEntityOfPage": {
+                    "@type": "WebPage",
+                    "@id": "https://www.dailycamera.com/2022/06/14/two-people-arrested-in-connection-with-string-of-armed-robberies-in-longmont/"
+                },
+                "headline": "Two people arrested in connection with string of armed robberies in Longmont",
+                "url": "https://www.dailycamera.com/2022/06/14/two-people-arrested-in-connection-with-string-of-armed-robberies-in-longmont/",
+                "thumbnailUrl": "https://www.dailycamera.com/wp-content/uploads/2022/06/DCC-Z-Kenny-Espinoza-Nija-Droessler.jpg?w=150",
+                "image": {
+                    "@type": "ImageObject",
+                    "url": "https://www.dailycamera.com/wp-content/uploads/2022/06/DCC-Z-Kenny-Espinoza-Nija-Droessler.jpg?w=1024"
+                },
+                "dateCreated": "2022-06-14T21:26:33Z",
+                "datePublished": "2022-06-14T21:26:33Z",
+                "dateModified": "2022-06-14T21:26:52Z",
+                "articleSection": "Other",
+                "author": [
+                    {
+                        "@type": "Person",
+                        "name": "Mitchell Byars"
+                    }
+                ],
+                "creator": [
+                    "Mitchell Byars"
+                ],
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Boulder Daily Camera",
+                    "logo": "https://www.dailycamera.com/wp-content/uploads/2019/04/DC-backupimage-1000x563.jpg?w=600"
+                },
+                "keywords": [
+                    "news",
+                    "crime and public safety",
+                    "latest headlines",
+                    "local news",
+                    "byarsm",
+                    "jvhenderson@dailycamera.com",
+                    "boulder county",
+                    "colorado",
+                    "front range",
+                    "longmont",
+                    "create topic",
+                    "dc: main"
+                ]
+            },
+            "rendered": "<script type=\"application/ld+json\">{\"@context\":\"https:\\/\\/schema.org\",\"@type\":\"NewsArticle\",\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.dailycamera.com\\/2022\\/06\\/14\\/two-people-arrested-in-connection-with-string-of-armed-robberies-in-longmont\\/\"},\"headline\":\"Two people arrested in connection with string of armed robberies in Longmont\",\"url\":\"https:\\/\\/www.dailycamera.com\\/2022\\/06\\/14\\/two-people-arrested-in-connection-with-string-of-armed-robberies-in-longmont\\/\",\"thumbnailUrl\":\"https:\\/\\/www.dailycamera.com\\/wp-content\\/uploads\\/2022\\/06\\/DCC-Z-Kenny-Espinoza-Nija-Droessler.jpg?w=150\",\"image\":{\"@type\":\"ImageObject\",\"url\":\"https:\\/\\/www.dailycamera.com\\/wp-content\\/uploads\\/2022\\/06\\/DCC-Z-Kenny-Espinoza-Nija-Droessler.jpg?w=1024\"},\"dateCreated\":\"2022-06-14T21:26:33Z\",\"datePublished\":\"2022-06-14T21:26:33Z\",\"dateModified\":\"2022-06-14T21:26:52Z\",\"articleSection\":\"Other\",\"author\":[{\"@type\":\"Person\",\"name\":\"Mitchell Byars\"}],\"creator\":[\"Mitchell Byars\"],\"publisher\":{\"@type\":\"Organization\",\"name\":\"Boulder Daily Camera\",\"logo\":\"https:\\/\\/www.dailycamera.com\\/wp-content\\/uploads\\/2019\\/04\\/DC-backupimage-1000x563.jpg?w=600\"},\"keywords\":[\"news\",\"crime and public safety\",\"latest headlines\",\"local news\",\"byarsm\",\"jvhenderson@dailycamera.com\",\"boulder county\",\"colorado\",\"front range\",\"longmont\",\"create topic\",\"dc: main\"]}</script>",
+            "tracker_url": "https://cdn.parsely.com/keys/dailycamera.com/p.js"
+        },
+        "post_status": "",
+        "edit_last": 0,
+        "edit_lock": 0,
+        "highlights": "",
+        "original_byline": "",
+        "original_canonical": "",
+        "original_category": "",
+        "original_email": "",
+        "original_id": 0,
+        "original_pubdate": "",
+        "original_source": "",
+        "primary_section": "41",
+        "primary_tag": 0,
+        "print_workflow_body": {
+            "deck_headline": "",
+            "print_title": "Two people arrested in connection with string of armed robberies in Longmont",
+            "print_subheadline": "",
+            "print_pub_date": 1655251200,
+            "print_slug": "15TCAROBBERY",
+            "print_content": "<p>Two people have been charged in connection with a string of armed robberies in Longmont, including the hotel where one of the suspects used to work.</p>\n<p>Kenny Espinoza, 22, and Nija Droessler, 21, were arrested on suspicion of aggravated robbery, robbery of an at-risk person, felony menacing, theft from an at-risk person and theft. Espinoza is also facing an additional count of violation of a protection order that Droessler had against him.</p>\n<p>According to an affidavit, Longmont police were called to a Super 8 Motel at 2446 Main St. on Friday for a report of an armed robbery.</p>\n<p>The night clerk said he let two people in who then proceeded to point a gun at his head and to demand he give them the cash drawer, which had about $300 in it.</p>\n<p>Police reviewed surveillance footage and noted the disguises the two suspects were wearing — including masks, caps and wigs — matched similar robberies at that Super 8 Motel and a Holiday Inn in late 2021.</p>\n<p>Other employees of the motel also reviewed the security footage and were able to identify one of the suspects as Espinoza, who had been an employee at the Super 8. In the surveillance footage, it is Espinoza who appears to put the gun to the head of the clerk, according to the affidavit.</p>\n<p>Police went to Espinoza's address and placed him into custody, along with Droessler.</p>\n<p>Droessler confessed to helping Espinoza with the robberies, and told police what they were wearing at the time.</p>\n<p>A search of the apartment also turned up wigs and caps that matched those seen in the surveillance footage. A BB gun matching the weapon used in the robberies was also found on scene.</p>\n<p>Both Espinoza and Droessler were then arrested, and Espinoza is set for a hearing on July 1 while Droessler will appear on June 27.</p>\n<p>Espinoza also has a pending felony menacing case in Boulder County, and has a prior conviction for felony menacing and harassment for which he was on probation.</p>\n<p>Espinoza is being held on $100,000 bond, while Droessler was released on a $500 cash bond.</p>\n",
+            "print_budget_line": "",
+            "print_excerpt": "Two people have been charged in connection with a string of armed robberies in Longmont, including the hotel where one of the suspects used to work.",
+            "print_featured_gallery_richtext": "",
+            "print_inline_galleries_richtext": "",
+            "print_inline_images_richtext": ""
+        },
+        "print_workflow_exported_ts": "1655242023",
+        "print_workflow_exported_username": "Julie Vossler-Henderson",
+        "print_workflow_shapes": "",
+        "print_workflow_side": {
+            "print_section": 21,
+            "print_status": 5082,
+            "add_export_buttons": ""
+        },
+        "really_short_title": "Longmont robberies",
+        "short_title": "",
+        "market_neutral_title": "",
+        "social_title": "",
+        "dfm_hub_post_id": 0,
+        "paywall_level": "metered",
+        "featured_media_content": {
+            "content_type": "image",
+            "content": {
+                "id": 1207361,
+                "title": "Kenny Espinoza and Nija Droessler (Boulder County Sheriff's Office)",
+                "filename": "DCC-Z-Kenny-Espinoza-Nija-Droessler.jpg",
+                "url": "https://www.dailycamera.com/wp-content/uploads/2022/06/DCC-Z-Kenny-Espinoza-Nija-Droessler.jpg",
+                "link": "https://www.dailycamera.com/kenny-espinoza-and-nija-droessler-boulder-county-sheriffs-office/",
+                "alt": "",
+                "author": "92",
+                "description": "",
+                "caption": "Kenny Espinoza and Nija Droessler (Boulder County Sheriff's Office)",
+                "name": "kenny-espinoza-and-nija-droessler-boulder-county-sheriffs-office",
+                "status": "inherit",
+                "uploadedTo": 0,
+                "date": 1655230104000,
+                "modified": 1655230104000,
+                "menuOrder": 0,
+                "mime": "image/jpeg",
+                "type": "image",
+                "subtype": "jpeg",
+                "icon": "https://www.dailycamera.com/wp-includes/images/media/default.png",
+                "dateFormatted": "June 14, 2022",
+                "nonces": {
+                    "update": false,
+                    "delete": false,
+                    "edit": false
+                },
+                "editLink": false,
+                "meta": false,
+                "authorName": "dfm-photoupload",
+                "authorLink": "",
+                "filesizeInBytes": 61020,
+                "filesizeHumanReadable": "60 KB",
+                "context": "",
+                "height": 371,
+                "width": 560,
+                "orientation": "landscape",
+                "sizes": {
+                    "thumbnail": {
+                        "height": "150",
+                        "width": "150",
+                        "url": "https://www.dailycamera.com/wp-content/uploads/2022/06/DCC-Z-Kenny-Espinoza-Nija-Droessler.jpg?w=150&h=150&crop=1",
+                        "orientation": "landscape"
+                    },
+                    "medium": {
+                        "height": 199,
+                        "width": 300,
+                        "url": "https://www.dailycamera.com/wp-content/uploads/2022/06/DCC-Z-Kenny-Espinoza-Nija-Droessler.jpg?w=300",
+                        "orientation": "landscape"
+                    },
+                    "large": {
+                        "height": 371,
+                        "width": 560,
+                        "url": "https://www.dailycamera.com/wp-content/uploads/2022/06/DCC-Z-Kenny-Espinoza-Nija-Droessler.jpg?w=560",
+                        "orientation": "landscape"
+                    },
+                    "full": {
+                        "url": "https://www.dailycamera.com/wp-content/uploads/2022/06/DCC-Z-Kenny-Espinoza-Nija-Droessler.jpg",
+                        "height": 371,
+                        "width": 560,
+                        "orientation": "landscape"
+                    }
+                },
+                "custom_caption": "Kenny Espinoza and Nija Droessler (Boulder County Sheriff's Office)"
+            },
+            "data": [
+                {
+                    "id": 1207361,
+                    "title": "Kenny Espinoza and Nija Droessler (Boulder County Sheriff's Office)",
+                    "filename": "DCC-Z-Kenny-Espinoza-Nija-Droessler.jpg",
+                    "url": "https://www.dailycamera.com/wp-content/uploads/2022/06/DCC-Z-Kenny-Espinoza-Nija-Droessler.jpg",
+                    "link": "https://www.dailycamera.com/kenny-espinoza-and-nija-droessler-boulder-county-sheriffs-office/",
+                    "alt": "",
+                    "author": "92",
+                    "description": "",
+                    "caption": "Kenny Espinoza and Nija Droessler (Boulder County Sheriff's Office)",
+                    "name": "kenny-espinoza-and-nija-droessler-boulder-county-sheriffs-office",
+                    "status": "inherit",
+                    "uploadedTo": 0,
+                    "date": 1655230104000,
+                    "modified": 1655230104000,
+                    "menuOrder": 0,
+                    "mime": "image/jpeg",
+                    "type": "image",
+                    "subtype": "jpeg",
+                    "icon": "https://www.dailycamera.com/wp-includes/images/media/default.png",
+                    "dateFormatted": "June 14, 2022",
+                    "nonces": {
+                        "update": false,
+                        "delete": false,
+                        "edit": false
+                    },
+                    "editLink": false,
+                    "meta": false,
+                    "authorName": "dfm-photoupload",
+                    "authorLink": "",
+                    "filesizeInBytes": 61020,
+                    "filesizeHumanReadable": "60 KB",
+                    "context": "",
+                    "height": 371,
+                    "width": 560,
+                    "orientation": "landscape",
+                    "sizes": {
+                        "thumbnail": {
+                            "height": "150",
+                            "width": "150",
+                            "url": "https://www.dailycamera.com/wp-content/uploads/2022/06/DCC-Z-Kenny-Espinoza-Nija-Droessler.jpg?w=150&h=150&crop=1",
+                            "orientation": "landscape"
+                        },
+                        "medium": {
+                            "height": 199,
+                            "width": 300,
+                            "url": "https://www.dailycamera.com/wp-content/uploads/2022/06/DCC-Z-Kenny-Espinoza-Nija-Droessler.jpg?w=300",
+                            "orientation": "landscape"
+                        },
+                        "large": {
+                            "height": 371,
+                            "width": 560,
+                            "url": "https://www.dailycamera.com/wp-content/uploads/2022/06/DCC-Z-Kenny-Espinoza-Nija-Droessler.jpg?w=560",
+                            "orientation": "landscape"
+                        },
+                        "full": {
+                            "url": "https://www.dailycamera.com/wp-content/uploads/2022/06/DCC-Z-Kenny-Espinoza-Nija-Droessler.jpg",
+                            "height": 371,
+                            "width": 560,
+                            "orientation": "landscape"
+                        }
+                    },
+                    "custom_caption": "Kenny Espinoza and Nija Droessler (Boulder County Sheriff's Office)"
+                }
+            ],
+            "rendered_content": "<img width=\"150\" height=\"150\" src=\"https://www.dailycamera.com/wp-content/uploads/2022/06/DCC-Z-Kenny-Espinoza-Nija-Droessler.jpg\" class=\"attachment-thumbnail size-thumbnail lazyload\" alt=\"\" loading=\"lazy\" draggable=\"false\" data-sizes=\"auto\" data-srcset=\"https://www.dailycamera.com/wp-content/uploads/2022/06/DCC-Z-Kenny-Espinoza-Nija-Droessler.jpg?w=560 560w\" data-src=\"https://www.dailycamera.com/wp-content/uploads/2022/06/DCC-Z-Kenny-Espinoza-Nija-Droessler.jpg\" />"
+        },
+        "attachments": [],
+        "authors": [
+            {
+                "ID": 112,
+                "display_name": "Mitchell Byars",
+                "description": "Mitchell Byars has been reporting for the Daily Camera since 2011, covering breaking news and courts. He is originally from Hawaii and enjoys the beach, camping, golf, beer and writing third-person bios about himself that exaggerate how outdoorsy he is.",
+                "first_name": "Mitchell",
+                "last_name": "Byars",
+                "user_nicename": "mitchell-byars",
+                "user_login": "mitchell-byars",
+                "user_email": "mbyars@prairiemountainmedia.com",
+                "type": "guest-author",
+                "linked_account": 0,
+                "website": "https://www.dailycamera.com",
+                "twitter": "@mitchellbyars",
+                "facebook": "",
+                "google_plus": ""
+            }
+        ],
+        "taxonomies": {
+            "category": [
+                {
+                    "term_id": 41,
+                    "name": "Crime and Public Safety",
+                    "slug": "crime-public-safety",
+                    "term_group": 0,
+                    "term_taxonomy_id": 41,
+                    "taxonomy": "category",
+                    "description": "",
+                    "parent": 32,
+                    "count": 3815,
+                    "filter": "raw"
+                },
+                {
+                    "term_id": 31,
+                    "name": "Latest Headlines",
+                    "slug": "latest-headlines",
+                    "term_group": 0,
+                    "term_taxonomy_id": 31,
+                    "taxonomy": "category",
+                    "description": "",
+                    "parent": 0,
+                    "count": 21529,
+                    "filter": "raw"
+                },
+                {
+                    "term_id": 33,
+                    "name": "Local News",
+                    "slug": "local-news",
+                    "term_group": 0,
+                    "term_taxonomy_id": 33,
+                    "taxonomy": "category",
+                    "description": "",
+                    "parent": 0,
+                    "count": 43937,
+                    "filter": "raw"
+                },
+                {
+                    "term_id": 32,
+                    "name": "News",
+                    "slug": "news",
+                    "term_group": 0,
+                    "term_taxonomy_id": 32,
+                    "taxonomy": "category",
+                    "description": "",
+                    "parent": 0,
+                    "count": 148813,
+                    "filter": "raw"
+                }
+            ],
+            "location": [
+                {
+                    "term_id": 171,
+                    "name": "Boulder County",
+                    "slug": "boulder-county",
+                    "term_group": 0,
+                    "term_taxonomy_id": 171,
+                    "taxonomy": "location",
+                    "description": "",
+                    "parent": 149,
+                    "count": 25775,
+                    "filter": "raw"
+                },
+                {
+                    "term_id": 148,
+                    "name": "Colorado",
+                    "slug": "colorado",
+                    "term_group": 0,
+                    "term_taxonomy_id": 148,
+                    "taxonomy": "location",
+                    "description": "",
+                    "parent": 0,
+                    "count": 32188,
+                    "filter": "raw"
+                },
+                {
+                    "term_id": 149,
+                    "name": "Front Range",
+                    "slug": "front-range",
+                    "term_group": 0,
+                    "term_taxonomy_id": 149,
+                    "taxonomy": "location",
+                    "description": "",
+                    "parent": 148,
+                    "count": 30051,
+                    "filter": "raw"
+                },
+                {
+                    "term_id": 178,
+                    "name": "Longmont",
+                    "slug": "longmont",
+                    "term_group": 0,
+                    "term_taxonomy_id": 178,
+                    "taxonomy": "location",
+                    "description": "",
+                    "parent": 171,
+                    "count": 6141,
+                    "filter": "raw"
+                }
+            ]
+        },
+        "featured_media_array": {
+            "id": 1207361,
+            "title": "Kenny Espinoza and Nija Droessler (Boulder County Sheriff's Office)",
+            "filename": "DCC-Z-Kenny-Espinoza-Nija-Droessler.jpg",
+            "url": "https://www.dailycamera.com/wp-content/uploads/2022/06/DCC-Z-Kenny-Espinoza-Nija-Droessler.jpg",
+            "link": "https://www.dailycamera.com/kenny-espinoza-and-nija-droessler-boulder-county-sheriffs-office/",
+            "alt": "",
+            "author": "92",
+            "description": "",
+            "caption": "Kenny Espinoza and Nija Droessler (Boulder County Sheriff's Office)",
+            "name": "kenny-espinoza-and-nija-droessler-boulder-county-sheriffs-office",
+            "status": "inherit",
+            "uploadedTo": 0,
+            "date": 1655230104000,
+            "modified": 1655230104000,
+            "menuOrder": 0,
+            "mime": "image/jpeg",
+            "type": "image",
+            "subtype": "jpeg",
+            "icon": "https://www.dailycamera.com/wp-includes/images/media/default.png",
+            "dateFormatted": "June 14, 2022",
+            "nonces": {
+                "update": false,
+                "delete": false,
+                "edit": false
+            },
+            "editLink": false,
+            "meta": false,
+            "authorName": "dfm-photoupload",
+            "authorLink": "",
+            "filesizeInBytes": 61020,
+            "filesizeHumanReadable": "60 KB",
+            "context": "",
+            "height": 371,
+            "width": 560,
+            "orientation": "landscape",
+            "sizes": {
+                "thumbnail": {
+                    "height": "150",
+                    "width": "150",
+                    "url": "https://www.dailycamera.com/wp-content/uploads/2022/06/DCC-Z-Kenny-Espinoza-Nija-Droessler.jpg?w=150&h=150&crop=1",
+                    "orientation": "landscape"
+                },
+                "medium": {
+                    "height": 199,
+                    "width": 300,
+                    "url": "https://www.dailycamera.com/wp-content/uploads/2022/06/DCC-Z-Kenny-Espinoza-Nija-Droessler.jpg?w=300",
+                    "orientation": "landscape"
+                },
+                "large": {
+                    "height": 371,
+                    "width": 560,
+                    "url": "https://www.dailycamera.com/wp-content/uploads/2022/06/DCC-Z-Kenny-Espinoza-Nija-Droessler.jpg?w=560",
+                    "orientation": "landscape"
+                },
+                "full": {
+                    "url": "https://www.dailycamera.com/wp-content/uploads/2022/06/DCC-Z-Kenny-Espinoza-Nija-Droessler.jpg",
+                    "height": 371,
+                    "width": 560,
+                    "orientation": "landscape"
+                }
+            },
+            "custom_caption": "Kenny Espinoza and Nija Droessler (Boulder County Sheriff's Office)"
+        },
+        "jetpack_featured_media_url": "https://www.dailycamera.com/wp-content/uploads/2022/06/DCC-Z-Kenny-Espinoza-Nija-Droessler.jpg",
+        "jetpack_sharing_enabled": true,
+        "jetpack_shortlink": "https://wp.me/paTUoF-545B",
+        "amp_enabled": true,
+        "_links": {
+            "self": [
+                {
+                    "href": "https://www.dailycamera.com/wp-json/wp/v2/posts/1207363"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https://www.dailycamera.com/wp-json/wp/v2/posts"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https://www.dailycamera.com/wp-json/wp/v2/types/post"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "https://www.dailycamera.com/wp-json/wp/v2/users/100"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "https://www.dailycamera.com/wp-json/wp/v2/comments?post=1207363"
+                }
+            ],
+            "version-history": [
+                {
+                    "count": 3,
+                    "href": "https://www.dailycamera.com/wp-json/wp/v2/posts/1207363/revisions"
+                }
+            ],
+            "predecessor-version": [
+                {
+                    "id": 1207422,
+                    "href": "https://www.dailycamera.com/wp-json/wp/v2/posts/1207363/revisions/1207422"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "https://www.dailycamera.com/wp-json/wp/v2/media/1207361"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "https://www.dailycamera.com/wp-json/wp/v2/media?parent=1207363"
+                }
+            ],
+            "wp:term": [
+                {
+                    "taxonomy": "category",
+                    "embeddable": true,
+                    "href": "https://www.dailycamera.com/wp-json/wp/v2/categories?post=1207363"
+                },
+                {
+                    "taxonomy": "post_tag",
+                    "embeddable": true,
+                    "href": "https://www.dailycamera.com/wp-json/wp/v2/tags?post=1207363"
+                },
+                {
+                    "taxonomy": "feature",
+                    "embeddable": true,
+                    "href": "https://www.dailycamera.com/wp-json/wp/v2/feature?post=1207363"
+                },
+                {
+                    "taxonomy": "location",
+                    "embeddable": true,
+                    "href": "https://www.dailycamera.com/wp-json/wp/v2/location?post=1207363"
+                },
+                {
+                    "taxonomy": "type-of-work",
+                    "embeddable": true,
+                    "href": "https://www.dailycamera.com/wp-json/wp/v2/type-of-work?post=1207363"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    }
+]

@@ -137,6 +137,26 @@ router.get("/feed", function (req, res) {
     });
 })
 
+// router.get("/testcsv", function (req, res) {
+//   console.log('csv1')
+//   // render the page and pass in any flash data if it exists
+//   var config = {
+//     method: 'get',
+//     url: 'https://api.iterable.com/api/export/data.csv?dataTypeName=emailSend&range=All&delimiter=%2C&startDateTime=2022-06-21%2022%3A01%3A31%20%2B00%3A00&endDateTime=2022-06-21%2022%3A02%3A31%20%2B00%3A00',
+//     headers: { 
+//       'api_key': '9bd5080e5b194d74bdfc98bb6b4bb5fd'
+//     }
+//   };
+  
+//   axios(config)
+//   .then(function (response) {
+//     console.log(JSON.stringify(response.data));
+//     res.end(JSON.stringify(response.data));
+//   })
+//   .catch(function (error) {
+//     console.log(error);
+//   });
+// })
 router.get("/publicmenu/coffee", function (req, res) {
   // render the page and pass in any flash data if it exists
   res.render("publicmenu.ejs", {
@@ -147,6 +167,13 @@ router.get("/publicmenu/coffee", function (req, res) {
 router.get("/publicmenu/cappuccino", function (req, res) {
   // render the page and pass in any flash data if it exists
   res.render("publicmenu.ejs", {
+    message: req.flash("public-menu"),
+
+  });
+});
+router.get("/firebase-coffee.js", function (req, res) {
+  // render the page and pass in any flash data if it exists
+  res.render("firebase-coffee.js", {
     message: req.flash("public-menu"),
 
   });
