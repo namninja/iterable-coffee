@@ -44,6 +44,56 @@
         event_source: 'Website'
       });
     </script>
+    <script src="scripts.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/@iterable/web-sdk/index.js"></script>
+    <script>
+
+      (() => {
+
+        const { setEmail, logout } = window['@iterable/web-sdk'].initialize(
+          ITERABLE_API_KEY,
+          ({ email }) => {
+            return window.axios
+              .post(
+                'https://jwt-generator.stg-itbl.co/generate',
+                {
+                  exp_minutes: 15,
+                  email,
+                  jwt_secret: ITERABLE_JWT_SECRET
+                },
+                {
+                  headers: {
+                    'Content-Type': 'application/json'
+                  }
+                }
+              )
+              .then((response) => {
+                console.log("token", response.data.token)
+                return response.data.token;
+              }).catch(error => {
+                console.log(error);
+              });;
+          }
+        );
+
+        const { request, pauseMessageStream, resumeMessageStream } = window['@iterable/web-sdk'].getInAppMessages(
+          {
+            count: 1,
+            packageName: ITERABLE_WEB_IDENTIFIER,
+            handleLinks: 'open-all-new-tab',
+          },
+          true
+        );
+
+        setEmail(ITERABLE_EMAIL)
+          .then(() => {
+            request()
+            .then(response => {console.log(response)})
+          })
+          .catch(() => { })
+      })()
+    </script>
     <%- include('scripts', {}); %>
 </body>
 </html>

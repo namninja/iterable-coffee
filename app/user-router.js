@@ -136,7 +136,27 @@ router.get("/feed", function (req, res) {
       console.log(error);
     });
 })
-
+router.get("/ovfeed", function (req, res) {
+  console.log('ok1')
+  var config = {
+    method: 'get',
+    url: 'https://api.provisionapp.io/v1/s/email-branding?partnerId=5319',
+    headers: { 
+      'Authorization': 'bff3432c-03a0-44df-bd95-d4c733e70336-62949846-3f93-4b0c-aff1-3dcf1b24bf0f'
+    }
+  };
+  
+  axios(config)
+  .then(function (response) {
+    var feed = { emailBranding: response.data }
+    console.log(JSON.stringify(response.data));
+    res.setHeader('Content-Type', 'application/json');
+    res.end(JSON.stringify(feed));
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+})
 // router.get("/testcsv", function (req, res) {
 //   console.log('csv1')
 //   // render the page and pass in any flash data if it exists
@@ -157,6 +177,7 @@ router.get("/feed", function (req, res) {
 //     console.log(error);
 //   });
 // })
+
 router.get("/publicmenu/coffee", function (req, res) {
   // render the page and pass in any flash data if it exists
   res.render("publicmenu.ejs", {
@@ -171,13 +192,7 @@ router.get("/publicmenu/cappuccino", function (req, res) {
 
   });
 });
-router.get("/firebase-coffee.js", function (req, res) {
-  // render the page and pass in any flash data if it exists
-  res.render("firebase-coffee.js", {
-    message: req.flash("public-menu"),
 
-  });
-});
 router.get("/publicmenu/latte", function (req, res) {
   // render the page and pass in any flash data if it exists
   res.render("publicmenu.ejs", {
