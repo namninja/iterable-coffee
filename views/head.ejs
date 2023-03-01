@@ -14,14 +14,8 @@
 
 
 
-  <script>
-    window.SEGMENT_API_KEY = 'qD0k4dfDDBwocsA9I4GoYjmaTOMtqOfu'
-    window.ITERABLE_WEB_IDENTIFIER = 'com.namngo.webinapptest'
-    window.ITERABLE_EMAIL = 'nam.ngo+web@iterable.com'
-    window.ITERABLE_API_KEY = '9817effb62d1435e9d4c54a65eaf2f7d'
-    window.ITERABLE_JWT_SECRET = '9e281091a6916184f0f4e719a4ac8fecb1b00d486640da22b15120c3188695d6307467e06614bee84c10352e65b622ef83e183f819d1c36feb4d9d732134f39f'
-  </script>
-  <script>
+  
+  <!-- <script>
     window.setrule = function setRule(ruleName) {
       var rule = document.createElement("div");
       rule.setAttribute("id", ruleName);
@@ -29,7 +23,7 @@
       rule.setAttribute("digioh", "digioh_rule");
       window.parent.document.body.appendChild(rule);
     }
-  </script>
+  </script> -->
   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous"></script>
   
@@ -37,7 +31,7 @@
     !function () {
       var analytics = window.analytics = window.analytics || []; if (!analytics.initialize) if (analytics.invoked) window.console && console.error && console.error("Segment snippet included twice."); else {
         analytics.invoked = !0; analytics.methods = ["trackSubmit", "trackClick", "trackLink", "trackForm", "pageview", "identify", "reset", "group", "track", "ready", "alias", "debug", "page", "once", "off", "on", "addSourceMiddleware", "addIntegrationMiddleware", "setAnonymousId", "addDestinationMiddleware"]; analytics.factory = function (e) { return function () { var t = Array.prototype.slice.call(arguments); t.unshift(e); analytics.push(t); return analytics } }; for (var e = 0; e < analytics.methods.length; e++) { var key = analytics.methods[e]; analytics[key] = analytics.factory(key) } analytics.load = function (key, e) { var t = document.createElement("script"); t.type = "text/javascript"; t.async = !0; t.src = "https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js"; var n = document.getElementsByTagName("script")[0]; n.parentNode.insertBefore(t, n); analytics._loadOptions = e }; analytics._writeKey = "aS6e07Fb2XXxrC27g1w8LFZXV1CxpESm";; analytics.SNIPPET_VERSION = "4.15.3";
-        analytics.load("aS6e07Fb2XXxrC27g1w8LFZXV1CxpESm");
+        analytics.load("ih2w41CcqzVEx3AoKlpoGSp9RUzOaYSR");
         analytics.page();
       }
     }();
@@ -54,17 +48,7 @@
     src='https://www.lightboxcdn.com/vendor/9cd457f2-5b1c-4a84-9ab7-7f9bbfb7608a/lightbox_inline.js'></script>
   <!--END Lightbox Javascript-->
   <script src="https://unpkg.com/@iterable/web-sdk/index.js"></script>
-  <script>
-    //Segment Script Start
-    !function () {
-      var analytics = window.analytics = window.analytics || []; if (!analytics.initialize) if (analytics.invoked) window.console && console.error && console.error("Segment snippet included twice."); else {
-        analytics.invoked = !0; analytics.methods = ["trackSubmit", "trackClick", "trackLink", "trackForm", "pageview", "identify", "reset", "group", "track", "ready", "alias", "debug", "page", "once", "off", "on", "addSourceMiddleware", "addIntegrationMiddleware", "setAnonymousId", "addDestinationMiddleware"]; analytics.factory = function (e) { return function () { var t = Array.prototype.slice.call(arguments); t.unshift(e); analytics.push(t); return analytics } }; for (var e = 0; e < analytics.methods.length; e++) { var key = analytics.methods[e]; analytics[key] = analytics.factory(key) } analytics.load = function (key, e) { var t = document.createElement("script"); t.type = "text/javascript"; t.async = !0; t.src = "https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js"; var n = document.getElementsByTagName("script")[0]; n.parentNode.insertBefore(t, n); analytics._loadOptions = e }; analytics._writeKey = SEGMENT_API_KEY;; analytics.SNIPPET_VERSION = "4.15.3";
-        analytics.load(SEGMENT_API_KEY);
-        analytics.page();
-      }
-    }();
-    //Segment Script End
-  </script>
+  
   <script type="text/javascript">
 
     //configure the SDK
