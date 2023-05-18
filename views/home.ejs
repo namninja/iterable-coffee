@@ -31,6 +31,7 @@
             </a>
         </footer>
     </main>
+   
     <!-- <script>
       analytics.identify('SEGMENT001', {
         email: 'nam.ngo+segment@iterable.com',
@@ -44,7 +45,138 @@
         event_source: 'Website'
       });
     </script> -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/@iterable/web-sdk/index.js"></script>
+    
+    <!-- <script>
+
+      (() => {
+        var email = '<%- JSON.stringify(email) %>';
+        var jwt = '<%- JSON.stringify(token) %>';
+        console.log(email)
+        console.log(jwt)
+        const { setEmail, logout } = window['@iterable/web-sdk'].initialize(
+          "4c325b5acb4b4754b15e5d4456c9418d", 
+          () => { Promise.resolve(jwt)
+          }
+          );
+
+        const { request, pauseMessageStream, resumeMessageStream } = window['@iterable/web-sdk'].getInAppMessages(
+          {
+            count: 20,
+            packageName: "com.namngo.webinapptest",
+            handleLinks: 'open-all-new-tab',
+          },
+          true
+        );
+
+        setEmail(email)
+          .then(() => {
+            request()
+            .then(response => {console.log(response)})
+          })
+          .catch(() => { })
+      })()
+    </script> -->
+    <script>
+      (() => {
+        var email = '<%- JSON.stringify(email) %>';
+        var jwt = '<%- JSON.stringify(token) %>';
+        console.log(email)
+        console.log(jwt)
+  const { setEmail, logout } = window['@iterable/web-sdk'].initialize(
+    '4cd81b259181463196cf417f2072f9cc',
+    () => Promise.resolve(jwt)
   
+  );
+
+///
+var objappVersion = navigator.appVersion;
+var browserAgent = navigator.userAgent;
+var browserName = navigator.appName;
+var browserVersion = '' + parseFloat(navigator.appVersion);
+var browserMajorVersion = parseInt(navigator.appVersion, 10);
+var Offset, OffsetVersion, ix;
+  
+// For Chrome 
+if ((OffsetVersion = browserAgent.indexOf("Chrome")) != -1) {
+    browserName = "Chrome";
+    browserVersion = browserAgent.substring(OffsetVersion + 7);
+}
+  
+// For Safari
+else if ((OffsetVersion = browserAgent.indexOf("Safari")) != -1) {
+    browserName = "Safari";
+    browserVersion = browserAgent.substring(OffsetVersion + 7);
+    if ((OffsetVersion = browserAgent.indexOf("Version")) != -1)
+        browserVersion = browserAgent.substring(OffsetVersion + 8);
+}
+  
+// Trimming the fullVersion string at 
+// semicolon/space if present 
+if ((ix = browserVersion.indexOf(";")) != -1)
+    browserVersion = browserVersion.substring(0, ix);
+if ((ix = browserVersion.indexOf(" ")) != -1)
+    browserVersion = browserVersion.substring(0, ix);
+  
+  
+browserMajorVersion = parseInt('' + browserVersion, 10);
+if (isNaN(browserMajorVersion)) {
+    browserVersion = '' + parseFloat(navigator.appVersion);
+    browserMajorVersion = parseInt(navigator.appVersion, 10);
+}
+if (browserName == 'Chrome') {
+  const { request, pauseMessageStream, resumeMessageStream } = window[
+    "@iterable/web-sdk"
+  ].getInAppMessages(
+    {
+      count: 20,
+      displayInterval: 1000,
+      packageName: "com.namngo.webinapptest2",
+      handleLinks: "open-all-same-tab",
+      closeButton: {
+        color: 'white',
+        position: 'top-right',
+        size: 30,
+        iconPath: '/assets/close-button.png',
+        sideOffset: '35%',
+        topOffset: '20%'
+      }
+    },
+    {display:'immediate'}
+  );
+  setEmail('+')
+  .then(() => {
+    request();
+  })
+  .catch(() => {})
+  console.log('webSDK fired')
+}
+
+if (browserName == 'Safari') {
+  const { request, pauseMessageStream, resumeMessageStream } = window[
+    "@iterable/web-sdk"
+  ].getInAppMessages(
+    {
+      count: 20,
+      displayInterval: 1000,
+      packageName: "com.namngo.webinapptest2",
+      handleLinks: "open-all-same-tab"
+    },
+    {display:'immediate'}
+  );
+  setEmail(email)
+  .then(() => {
+    request();
+  })
+  .catch(() => {})
+  console.log('webSDK mobile fired')
+}
+
+})()
+
+    </script>
+
     
     <%- include('scripts', {}); %>
 </body>

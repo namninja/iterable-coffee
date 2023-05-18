@@ -4,7 +4,8 @@ const passport = require("passport");
 const User = require("../app/models/user");
 const fs = require("fs");
 const axios = require('axios');
-
+var jwt = require('jsonwebtoken');
+const { SECRET } = require("../config/database.js");
 
 // route middleware to make sure a user is logged in
 function isLoggedIn(req, res, next) {
@@ -19,25 +20,9 @@ function isLoggedIn(req, res, next) {
 // HOME PAGE (with login links)
 router.get("/", function (req, res) {
   console.log("here")
-  axios.post('https://jwt-generator.stg-itbl.co/generate',
-    {
-      exp_minutes: 15,
-      email: "nam.ngo+web@iterable.com",
-      jwt_secret: "482bad84f4271d482f9d4857bbd217c2031af4ff090434ae9bd517b8a75db1e37f4acd5631645293644d99c8c5a0648a9811b25f41beb68536091dad986f4f39"
-    },
-    {
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    }
-  )
-    .then(response => {
-      console.log(response.data.token);
-    })
-    .catch(error => {
-      console.log(error);
-    });
-  res.render("index.ejs", { user: req.user }); // load the index.ejs file
+  res.render("index.ejs", { 
+    user: req.user
+  }); // load the index.ejs file
 
 });
 
@@ -51,7 +36,15 @@ router.get("/login", function (req, res) {
   res.render("login.ejs", {
     message: req.flash("loginMessage"),
     user: req.user
+
   });
+});
+
+router.get("/token", function (req, res) {
+  // render the page and pass in any flash data if it exists
+console.log(req)  
+    
+
 });
 
 // process the login form

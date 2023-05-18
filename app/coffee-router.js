@@ -4,6 +4,9 @@ const bodyParser = require("body-parser");
 const jsonParser = bodyParser.json();
 const User = require("./models/user");
 const Coffee = require("./models/coffee");
+var jwt = require('jsonwebtoken');
+const { SECRET } = require("../config/database.js");
+
 
 function isLoggedIn(req, res, next) {
   // if user is authenticated in the session, carry on
@@ -20,9 +23,18 @@ router.get("/home", isLoggedIn, function(req, res) {
     if (err) {
       res.status(500).send(err);
     } else {
+      var token = jwt.sign({ 
+        email: req.user.email, 
+        iat: 1679954697,
+        exp: Math.floor(Date.now() / 1000) + 31536000
+    }, SECRET);
+      console.log(token)
+      console.log(req.user)
       res.render("home.ejs", {
         user: req.user,
-        coffee: coffee
+        coffee: coffee,
+        token: token,
+        email: req.user.email
 
         // get the user out of session and pass to template
       });
