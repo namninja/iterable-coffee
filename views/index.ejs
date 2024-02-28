@@ -144,10 +144,10 @@
           20.00,
           4
         );
-
+        let oid = 'order-' + (Math.floor(Math.random() * 9000000) + 1000000);
         // 2. Summarize the transaction
         var transactionAttributes = {
-          Id: 'foo-transaction-id',
+          Id: oid,
           Revenue: 430.00,
           Tax: 30
         };
