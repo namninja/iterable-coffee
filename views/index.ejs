@@ -123,27 +123,25 @@
         event.preventDefault();
         segmentEvent();
         var customProductAttributes = {
-          'ocean-view': true,
-          'balcony': false
+          'size': "large",
+          'toppings': true
         };
 
         var product1 = mParticle.eCommerce.createProduct(
-          'Double Room - Econ Rate',  // Name
-          'econ-1',                   // SKU
-          100.00,                     // Price
+          'Supreme Pizza',  // Name
+          'sup-1',                   // SKU
+          50.00,                     // Price
           4,                          // Quantity
           'variant',                  // Variant
-          'room',                     // Category
-          'lodge-o-rama',             // Brand
+          'food',                     // Category
+          'Reiterable Pizza',             // Brand
           'banner',                   // Position
-          null,                       // Coupon code
-          customProductAttributes     // The custom attributes defined in a separate variable above
         );
 
         var product2 = mParticle.eCommerce.createProduct(
-          'Double Room - Econ Rate',
-          'econ-1',
-          100.00,
+          'Pepperoni Pizza',
+          'pep-1',
+          20.00,
           4
         );
 
