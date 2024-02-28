@@ -1,93 +1,185 @@
 <%- include('head', {}); %>
 
-    <body>
+  <body>
 
-        <main role="main" id="main-index">
+    <main role="main" id="main-index">
 
-            <section role="region" class="landing-content">
+      <section role="region" class="landing-content">
+        <form name="iterable_optin"
+          action="//links.iterable.com/lists/publicAddSubscriberForm?publicIdString=8072823e-66a1-4b8b-b739-472ad2b6ad19"
+          target="_blank" method="POST" class="email">
+          <!-- <input type="text" name="email" size="22" onfocus="if(this.value===this.defaultValue){this.value='';}" onblur="if(this.value===''){this.value=this.defaultValue;}" value="Enter your email"> -->
+          <input type="hidden" id="email" name="email" value="nam.ngo+hidden@iterable.com">
+          <input type="submit" value="Submit">
+        </form>
+      </section>
+      <footer role="contentinfo" class="landing-auth">
 
-            </section>
-            <footer role="contentinfo" class="landing-auth">
+        <div id="auth-btns"></div>
+        <a href="/login" class="btn">Log in</a>
+        <a href="/signup" class="btn signup">Sign up</a>
+        </div>
+        <div id="auth-btns"></div>
 
-                <div id="auth-btns"></div>
-                <a href="/login" class="btn">Log in</a>
-                <a href="/signup" class="btn signup">Sign up</a>
-                </div>
-                <div id="auth-btns"></div>
+        <h2>Trigger Event</h2>
 
-                <h2>Trigger Event</h2>
+        <form id="js-event-button">
+          <input type="submit" value="Trigger Event">
+        </form>
+        </div>
+        <div id="copyright">
+          <hr />
+          <a href="https://github.com/namninja" target="_blank">
+            <i class="fab fa-github">
+              Nam Ninja</i>
+          </a>
+        </div>
+      </footer>
+    </main>
 
-                <form id="js-event-button">
-                    <input type="submit" value="Trigger Event">
-                </form>
-                </div>
-                <div id="copyright">
-                    <hr />
-                    <a href="https://github.com/namninja" target="_blank"><i class="fab fa-github"> Nam Ninja</i></a>
-                </div>
-            </footer>
-        </main>
-       
-        <script>
-            analytics.identify("web1", {
-                email: "nam.ngo+web@iterable.com",
-                favoriteCafeBeverage: "latte",
-                firstName: "Boba",
-                lastName: "Fett",
-            });
+    <script>
+      let campaignId = ""
+      let templateId = ""
 
-            function segmentEvent() {
-                var myHeaders = new Headers();
-                myHeaders.append("api_key", "c344ad8eb2864ca4a8ef681bceb82468");
-                myHeaders.append("Content-Type", "application/json");
+      // analytics.identify('SEGMENTCAR002', {
+      //   favoriteCafeBeverage: "mocha",
+      //   firstName: "Peter",
+      //   lastName: "Parkedcar",
+      //   interests: ["music", "surfing", "soccer"]
 
-                var raw = JSON.stringify({
-                    "email": "nam.ngo+web@iterable.com",
-                    "eventName": "webAppEventTriggered",
-                    "dataFields": {
-                        "likesToDance": true,
-                        "likesToPaint": true
-                    }
-                });
+      // });
+      analytics.track('login successful', {
+        event_source: 'Website',
+        email: "nam.ngo+parkedcar2@iterable.com",
+      });
+      function getAllQueryParameters() {
+        const queryString = window.location.search.slice(1);
+        const params = new URLSearchParams(queryString);
+        const queryParams = {};
 
-                var requestOptions = {
-                    method: 'POST',
-                    headers: myHeaders,
-                    body: raw,
-                    redirect: 'follow'
-                };
+        // Iterate over all parameters and store them in the object
+        for (const [key, value] of params.entries()) {
+          queryParams[key] = decodeURIComponent(value);
+        }
 
-                fetch("https://api.iterable.com/api/events/track\n", requestOptions)
-                    .then(response => response.text())
-                    .then(result => console.log(result))
-                    .catch(error => console.log('error', error));
-                /* Event code Start */
-                analytics.track('SegmentEventTriggered', {
-                    event_source: 'Website'
-                });
+        return queryParams;
+      }
 
-                /* Event code End */
+      // Get all query parameters from the URL
+      const allParameters = getAllQueryParameters();
 
-                //Do not delete the this
-                $("#js-event-button").append("<p>Success! Segment Event Triggered</p>");
-            }
+      // Output the values (you can do whatever you need with them)
+      console.log('All Query Parameters:', allParameters);
+
+      // Access specific parameters like campaignId and templateId
+      campaignId = allParameters['campaignId'];
+      templateId = allParameters['templateId'];
+
+      // Output specific parameter values
+      console.log('Campaign ID:', campaignId);
+      console.log('Template ID:', templateId);
+
+      function segmentEvent() {
+        var myHeaders = new Headers();
+        myHeaders.append("api_key", "c344ad8eb2864ca4a8ef681bceb82468");
+        myHeaders.append("Content-Type", "application/json");
+
+        var raw = JSON.stringify({
+          "email": "nam.ngo+web@iterable.com",
+          "eventName": "webAppEventTriggered",
+          "dataFields": {
+            "likesToDance": true,
+            "likesToPaint": true,
+            "campaignId": campaignId,
+            "templateId": templateId
+          }
+        });
+
+        var requestOptions = {
+          method: 'POST',
+          headers: myHeaders,
+          body: raw,
+          redirect: 'follow'
+        };
+
+        fetch("https://api.iterable.com/api/events/track\n", requestOptions).then(response => response.text()).then(result => console.log(result)).catch(error => console.log('error', error));
+        /* Event code Start */
+        analytics.track('SegmentEventTriggered', {
+          "event_source": 'Website',
+          "campaignId": campaignId,
+          "templateId": templateId
 
 
-            $('#js-event-button').submit(event => {
-                event.preventDefault();
-                segmentEvent();
-            });
+        });
 
-        </script>
-        <script>
+        /* Event code End */
 
-            mParticle.logEvent(
-                'mparticle_test',
-                mParticle.EventType.Navigation,
-                {}
-            );
-        </script>
-        <%- include('scripts', {}); %>
-    </body>
+        // Do not delete the this
+        $("#js-event-button").append("<p>Success! Segment Event Triggered</p>");
+      }
 
-    </html>
+
+      $('#js-event-button').submit(event => {
+        event.preventDefault();
+        segmentEvent();
+        var customProductAttributes = {
+          'ocean-view': true,
+          'balcony': false
+        };
+
+        var product1 = mParticle.eCommerce.createProduct(
+          'Double Room - Econ Rate',  // Name
+          'econ-1',                   // SKU
+          100.00,                     // Price
+          4,                          // Quantity
+          'variant',                  // Variant
+          'room',                     // Category
+          'lodge-o-rama',             // Brand
+          'banner',                   // Position
+          null,                       // Coupon code
+          customProductAttributes     // The custom attributes defined in a separate variable above
+        );
+
+        var product2 = mParticle.eCommerce.createProduct(
+          'Double Room - Econ Rate',
+          'econ-1',
+          100.00,
+          4
+        );
+
+        // 2. Summarize the transaction
+        var transactionAttributes = {
+          Id: 'foo-transaction-id',
+          Revenue: 430.00,
+          Tax: 30
+        };
+
+        // 3. Log the purchase event
+
+        // Optional custom attributes for a product action can be defined as key/value pairs witin an object
+        var customAttributes = {
+          'sale': true
+        };
+
+        // Optional custom flags can be defined as key/value pairs within an object
+        var customFlags = {
+          'Google.Category': 'travel'
+        };
+
+        mParticle.eCommerce.logProductAction(
+          mParticle.ProductActionType.Purchase,
+          [product1, product2],
+          customAttributes,
+          customFlags,
+          transactionAttributes);
+
+      });
+    </script>
+    <script>
+
+      mParticle.logEvent('mparticle_test', mParticle.EventType.Navigation, {});
+    </script>
+    <%- include('scripts', {}); %>
+  </body>
+
+  </html>

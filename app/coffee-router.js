@@ -23,11 +23,14 @@ router.get("/home", isLoggedIn, function(req, res) {
     if (err) {
       res.status(500).send(err);
     } else {
-      var token = jwt.sign({ 
-        email: req.user.email, 
-        iat: 1679954697,
-        exp: Math.floor(Date.now() / 1000) + 31536000
-    }, SECRET);
+      var token = jwt.sign({
+        exp: 1711490697,
+        iat: 1679954697, 
+        email: req.user.email
+        
+        //exp: Math.floor(Date.now() / 1000) + 31536000
+        
+    }, "8bc52bc88ed097d4bbe28e54d58a35b7fe1d4531a9d1c2273fa0302a5e903674470364107cf878d80984d919d38814f0f0b0e6e04709858213ff8cfd6af0c0f9");
       console.log(token)
       console.log(req.user)
       res.render("home.ejs", {
@@ -41,6 +44,7 @@ router.get("/home", isLoggedIn, function(req, res) {
     }
   });
 });
+
 router.get("/order", isLoggedIn, function(req, res) {
   Coffee.find({ user: req.user.id }, function(err, coffee) {
     if (err) {
