@@ -123,8 +123,8 @@
       return "";
     }
 
-    let campaignId = getCookie("iterableEmailCampaignId");
-    let templateId = getCookie("iterableTemplateId");
+    let campaignId = parseInt(getCookie("iterableEmailCampaignId"));
+    let templateId = parseInt(getCookie("iterableTemplateId"));
 
     window.mParticle.ready(
 
