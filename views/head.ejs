@@ -91,7 +91,7 @@
   <script type="text/javascript">
     window.mParticle = {
       config: {
-        isDevelopmentMode: false //switch to false (or remove) for production
+        isDevelopmentMode: true //switch to false (or remove) for production
       }
     };
     (
@@ -170,19 +170,19 @@
   };
   mParticle.Identity.login({
     userIdentities: {
-      email: 'nam.ngo+mpart2@iterable.com',
+      email: 'nam.ngo+mpart3@iterable.com',
       customerid: 'mpart2'    
     }
   }, identityCallback);
   
   
   
-  mParticle.Identity.logout({
-    userIdentities: {
-      email: 'nam.ngo+mpart3@iterable.com',
-      customerid: 'mpart3'    
-    }
-  }, identityCallback);
+  // mParticle.Identity.logout({
+  //   userIdentities: {
+  //     email: 'nam.ngo+mpart3@iterable.com',
+  //     customerid: 'mpart3'    
+  //   }
+  // }, identityCallback);
     }
   
   
