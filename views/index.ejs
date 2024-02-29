@@ -20,12 +20,17 @@
         <a href="/signup" class="btn signup">Sign up</a>
         </div>
         <div id="auth-btns"></div>
+        <h2>MParticle Login</h2>
 
+        <form id="js-mpartli-button">
+          <input type="submit" value="Trigger Event">
+        </form>
         <h2>Trigger Event</h2>
 
         <form id="js-event-button">
           <input type="submit" value="Trigger Event">
         </form>
+       
         </div>
         <div id="copyright">
           <hr />
@@ -115,58 +120,82 @@
         /* Event code End */
 
         // Do not delete the this
-        $("#js-event-button").append("<p>Success! Segment Event Triggered</p>");
+        console.log("Success! Segment Event Triggered");
       }
+      var identityRequest = {
+
+        userIdentities: {
+
+          email: 'nam.ngo+mpart3@iterable.com',
+
+          customerid: 'mpart3'
+
+        }
+
+      };
+
+      var identityCallback = function (result) {
+
+        if (result.httpCode == 200) {
+
+          if (result.getUser()) {
+
+            result.getUser().setUserAttribute('isLoyaltyMember', true);
+
+            result.getUser().setUserAttribute('LoyaltyMemberSince', '2023-09-26 12:13:35');
+
+            result.getUser().setUserAttribute('firstName', 'Scott');
+
+            result.getUser().setUserAttribute('lastName', 'Lang');
+          }
+        }
+      }
+      $('#js-mpartli-button').submit(event => {
+        event.preventDefault();
+
+        mParticle.Identity.login(identityRequest, identityCallback);
+      })
 
 
       $('#js-event-button').submit(event => {
         event.preventDefault();
         segmentEvent();
-        var customProductAttributes = {
-          'size': "large",
-          'toppings': true
-        };
+        // 1. Create the product
 
         var product1 = mParticle.eCommerce.createProduct(
-          'Supreme Pizza',  // Name
-          'sup-1',                   // SKU
-          50.00,                     // Price
-          4,                          // Quantity
-          'variant',                  // Variant
-          'food',                     // Category
-          'Reiterable Pizza',             // Brand
-          'banner',                   // Position
+          'Iced Mocha', // Name
+          'mocha-iced-large', // SKU
+          8, // Price
+          2 // Quantity
+        );
+        var product2 = mParticle.eCommerce.createProduct(
+          'Caramel Macchiato',
+          'cm-hot-large',
+          8.25,
+          1
+        );
+        var product3 = mParticle.eCommerce.createProduct(
+          'Cappuccino',
+          'cap-hot-medium',
+          6.25,
+          1
         );
 
-        var product2 = mParticle.eCommerce.createProduct(
-          'Pepperoni Pizza',
-          'pep-1',
-          20.00,
-          4
-        );
-        let oid = 'order-' + (Math.floor(Math.random() * 9000000) + 1000000);
         // 2. Summarize the transaction
+        let oid = 'ORD-' + (Math.floor(Math.random() * 9000000) + 1000000);
         var transactionAttributes = {
+
           Id: oid,
-          Revenue: 430.00,
+          Revenue: 30.50,
           Tax: 30
         };
 
-        // 3. Log the purchase event
-
-        // Optional custom attributes for a product action can be defined as key/value pairs witin an object
-        var customAttributes = {
-          'sale': true
-        };
-
-        // Optional custom flags can be defined as key/value pairs within an object
-        var customFlags = {
-          'Google.Category': 'travel'
-        };
-
+        // 3. Log the purchase event (optional custom attributes an custom flags depending on your );
+        var customAttributes = null; // if not passing any custom attributes, pass null
+        var customFlags = null; // if not passing any custom flags, pass null
         mParticle.eCommerce.logProductAction(
           mParticle.ProductActionType.Purchase,
-          [product1, product2],
+          [product1, product2, product3],
           customAttributes,
           customFlags,
           transactionAttributes);

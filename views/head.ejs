@@ -14,7 +14,7 @@
 
 
 
-  
+
   <!-- <script>
     window.setrule = function setRule(ruleName) {
       var rule = document.createElement("div");
@@ -26,7 +26,7 @@
   </script> -->
   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous"></script>
-  
+
   <script>
     !function () {
       var analytics = window.analytics = window.analytics || []; if (!analytics.initialize) if (analytics.invoked) window.console && console.error && console.error("Segment snippet included twice."); else {
@@ -48,8 +48,8 @@
     src='https://www.lightboxcdn.com/vendor/9cd457f2-5b1c-4a84-9ab7-7f9bbfb7608a/lightbox_inline.js'></script>
   <!--END Lightbox Javascript-->
   <script src="https://unpkg.com/@iterable/web-sdk/index.js"></script>
-  
-  <script type="text/javascript">
+
+  <!-- <script type="text/javascript">
 
     //configure the SDK
     window.mParticle = {
@@ -87,109 +87,157 @@
     (
       function (t) { window.mParticle = window.mParticle || {}; window.mParticle.EventType = { Unknown: 0, Navigation: 1, Location: 2, Search: 3, Transaction: 4, UserContent: 5, UserPreference: 6, Social: 7, Other: 8 }; window.mParticle.eCommerce = { Cart: {} }; window.mParticle.Identity = {}; window.mParticle.config = window.mParticle.config || {}; window.mParticle.config.rq = []; window.mParticle.config.snippetVersion = 2.3; window.mParticle.ready = function (t) { window.mParticle.config.rq.push(t) }; var e = ["endSession", "logError", "logBaseEvent", "logEvent", "logForm", "logLink", "logPageView", "setSessionAttribute", "setAppName", "setAppVersion", "setOptOut", "setPosition", "startNewSession", "startTrackingLocation", "stopTrackingLocation"]; var o = ["setCurrencyCode", "logCheckout"]; var i = ["identify", "login", "logout", "modify"]; e.forEach(function (t) { window.mParticle[t] = n(t) }); o.forEach(function (t) { window.mParticle.eCommerce[t] = n(t, "eCommerce") }); i.forEach(function (t) { window.mParticle.Identity[t] = n(t, "Identity") }); function n(e, o) { return function () { if (o) { e = o + "." + e } var t = Array.prototype.slice.call(arguments); t.unshift(e); window.mParticle.config.rq.push(t) } } var dpId, dpV, config = window.mParticle.config, env = config.isDevelopmentMode ? 1 : 0, dbUrl = "?env=" + env, dataPlan = window.mParticle.config.dataPlan; dataPlan && (dpId = dataPlan.planId, dpV = dataPlan.planVersion, dpId && (dpV && (dpV < 1 || dpV > 1e3) && (dpV = null), dbUrl += "&plan_id=" + dpId + (dpV ? "&plan_version=" + dpV : ""))); var mp = document.createElement("script"); mp.type = "text/javascript"; mp.async = true; mp.src = ("https:" == document.location.protocol ? "https://jssdkcdns" : "http://jssdkcdn") + ".mparticle.com/js/v2/" + t + "/mparticle.js" + dbUrl; var c = document.getElementsByTagName("script")[0]; c.parentNode.insertBefore(mp, c) }
     )("us1-21ae79eec75cdd4d8ea9e54a75ceb5e2");
-  </script>
+  </script> -->
   <script type="text/javascript">
+
     window.mParticle = {
+
       config: {
+
         isDevelopmentMode: true //switch to false (or remove) for production
+
       }
+
     };
+
     (
-      function(t){window.mParticle=window.mParticle||{};window.mParticle.EventType={Unknown:0,Navigation:1,Location:2,Search:3,Transaction:4,UserContent:5,UserPreference:6,Social:7,Other:8};window.mParticle.eCommerce={Cart:{}};window.mParticle.Identity={};window.mParticle.config=window.mParticle.config||{};window.mParticle.config.rq=[];window.mParticle.config.snippetVersion=2.2;window.mParticle.ready=function(t){window.mParticle.config.rq.push(t)};var e=["endSession","logError","logBaseEvent","logEvent","logForm","logLink","logPageView","setSessionAttribute","setAppName","setAppVersion","setOptOut","setPosition","startNewSession","startTrackingLocation","stopTrackingLocation"];var o=["setCurrencyCode","logCheckout"];var i=["identify","login","logout","modify"];e.forEach(function(t){window.mParticle[t]=n(t)});o.forEach(function(t){window.mParticle.eCommerce[t]=n(t,"eCommerce")});i.forEach(function(t){window.mParticle.Identity[t]=n(t,"Identity")});function n(e,o){return function(){if(o){e=o+"."+e}var t=Array.prototype.slice.call(arguments);t.unshift(e);window.mParticle.config.rq.push(t)}}var mp=document.createElement("script");mp.type="text/javascript";mp.async=true;mp.src=("https:"==document.location.protocol?"https://jssdkcdns":"http://jssdkcdn")+".mparticle.com/js/v2/"+t+"/mparticle.js";var c=document.getElementsByTagName("script")[0];c.parentNode.insertBefore(mp,c)}
+
+      function (t) { window.mParticle = window.mParticle || {}; window.mParticle.EventType = { Unknown: 0, Navigation: 1, Location: 2, Search: 3, Transaction: 4, UserContent: 5, UserPreference: 6, Social: 7, Other: 8 }; window.mParticle.eCommerce = { Cart: {} }; window.mParticle.Identity = {}; window.mParticle.config = window.mParticle.config || {}; window.mParticle.config.rq = []; window.mParticle.config.snippetVersion = 2.2; window.mParticle.ready = function (t) { window.mParticle.config.rq.push(t) }; var e = ["endSession", "logError", "logBaseEvent", "logEvent", "logForm", "logLink", "logPageView", "setSessionAttribute", "setAppName", "setAppVersion", "setOptOut", "setPosition", "startNewSession", "startTrackingLocation", "stopTrackingLocation"]; var o = ["setCurrencyCode", "logCheckout"]; var i = ["identify", "login", "logout", "modify"]; e.forEach(function (t) { window.mParticle[t] = n(t) }); o.forEach(function (t) { window.mParticle.eCommerce[t] = n(t, "eCommerce") }); i.forEach(function (t) { window.mParticle.Identity[t] = n(t, "Identity") }); function n(e, o) { return function () { if (o) { e = o + "." + e } var t = Array.prototype.slice.call(arguments); t.unshift(e); window.mParticle.config.rq.push(t) } } var mp = document.createElement("script"); mp.type = "text/javascript"; mp.async = true; mp.src = ("https:" == document.location.protocol ? "https://jssdkcdns" : "http://jssdkcdn") + ".mparticle.com/js/v2/" + t + "/mparticle.js"; var c = document.getElementsByTagName("script")[0]; c.parentNode.insertBefore(mp, c) }
+
     )("us1-21ae79eec75cdd4d8ea9e54a75ceb5e2");
-  </script> 
- <script>
-  window.mParticle.ready(
-    function() {
-      console.log('mParticle has loaded!');
-       // !! Note: do not attempt to access the user object at this point
-       // !! var user = window.mParticle.Identity.getCurrentUser();
-       // !! Instead, access the user object via the mParticle.config.identityCallback option
-  var identityRequest = {
-    userIdentities: {
-      email: 'nam.ngo+mpart3@iterable.com',
-      customerid: 'mpart3'    
-    }
-  };
-  var identityCallback = function(result) { 
-    if (result.httpCode == 200) {
-    if (result.getUser()) { 
-      result.getUser().setUserAttribute('isLoyaltyMember', true); 
-      result.getUser().setUserAttribute('LoyaltyMemberSince', '2023-09-26 12:13:35');
-      result.getUser().setUserAttribute('firstName', 'Sebastien');
-      result.getUser().setUserAttribute('lastName', 'Malbois');
-  
-  
-  mParticle.logEvent('Redeemed a reward', mParticle.EventType.Navigation, {
-      chilliesAmount: 3
-  });
-  
-  
-      // 1. Create the product
-  var product1 = mParticle.eCommerce.createProduct(
-      'Houmous with PERi-PERi Drizzle',  // Name
-      '1',                   // SKU
-      3.95,                     // Price
-      1                           // Quantity
-  );
-  
-  var product2 = mParticle.eCommerce.createProduct(
-      'Chicken Butterfly',
-      '5', 
-      8.25, 
-      1
-  );
-  let oid = 'order-' + (Math.floor(Math.random() * 9000000) + 1000000);
-  // 2. Summarize the transaction
-  var transactionAttributes = {
-      Id: oid,
-      Revenue: 12.20,
-      Tax: 30
-  };
-  
-  // 3. Log the purchase event (optional custom attributes an custom flags depending on your );
-  var customAttributes = null; // if not passing any custom attributes, pass null
-  var customFlags = null; // if not passing any custom flags, pass null
-  
-  mParticle.eCommerce.logProductAction(
-      mParticle.ProductActionType.Purchase,
-      [product1, product2],
-      customAttributes,
-      customFlags,
-      transactionAttributes);
-  
-  //mParticle.logEvent('subscriptionsUpdated', mParticle.EventType.UserPreference, {
-  //    emailListIds: 1198603,
-  //    unsubscribedChannelIds: 51297, 
-  //    unsubscribedMessageTypeIds: 62534,
-  //    campaignId: 2915777, 
-  //    templateId: 3995505
-  //});
-  }
-    } 
-  };
-  mParticle.Identity.login({
-    userIdentities: {
-      email: 'nam.ngo+mpart3@iterable.com',
-      customerid: 'mpart2'    
-    }
-  }, identityCallback);
-  
-  
-  
-  // mParticle.Identity.logout({
-  //   userIdentities: {
-  //     email: 'nam.ngo+mpart3@iterable.com',
-  //     customerid: 'mpart3'    
-  //   }
-  // }, identityCallback);
-    }
-  
-  
-  );
-  
-  
-  
+
+  </script>
+
+  <script>
+
+    window.mParticle.ready(
+
+      function () {
+
+        console.log('mParticle has loaded!');
+
+        // !! Note: do not attempt to access the user object at this point
+
+        // !! var user = window.mParticle.Identity.getCurrentUser();
+
+        // !! Instead, access the user object via the mParticle.config.identityCallback option
+
+        var identityRequest = {
+
+          userIdentities: {
+
+            email: 'nam.ngo+mpart3@iterable.com',
+
+            customerid: 'mpart3'
+
+          }
+
+        };
+
+        var identityCallback = function (result) {
+
+          if (result.httpCode == 200) {
+
+            if (result.getUser()) {
+
+              result.getUser().setUserAttribute('isLoyaltyMember', true);
+
+              result.getUser().setUserAttribute('LoyaltyMemberSince', '2023-09-26 12:13:35');
+
+              result.getUser().setUserAttribute('firstName', 'Scott');
+
+              result.getUser().setUserAttribute('lastName', 'Lang');
+
+              mParticle.logEvent('Redeemed a reward', mParticle.EventType.Navigation, {
+
+                coffeeAmount: 5
+
+              });
+
+              // 1. Create the product
+
+              var product1 = mParticle.eCommerce.createProduct(
+
+                'Iced Mocha', // Name
+
+                'mocha-iced-large', // SKU
+
+                8, // Price
+
+                2 // Quantity
+
+              );
+
+              var product2 = mParticle.eCommerce.createProduct(
+
+                'Caramel Macchiato',
+
+                'cm-hot-large',
+
+                8.25,
+
+                1
+
+              );
+
+              // 2. Summarize the transaction
+              let oid = 'ORD-' + (Math.floor(Math.random() * 9000000) + 1000000);
+              var transactionAttributes = {
+
+                Id: oid,
+
+                Revenue: 24.25,
+
+                Tax: 30
+
+              };
+
+              // 3. Log the purchase event (optional custom attributes an custom flags depending on your );
+
+              var customAttributes = null; // if not passing any custom attributes, pass null
+
+              var customFlags = null; // if not passing any custom flags, pass null
+
+              mParticle.eCommerce.logProductAction(
+
+                mParticle.ProductActionType.Purchase,
+
+                [product1, product2],
+
+                customAttributes,
+
+                customFlags,
+
+                transactionAttributes);
+
+              //mParticle.logEvent('subscriptionsUpdated', mParticle.EventType.UserPreference, {
+
+              // emailListIds: 1198603,
+
+              // unsubscribedChannelIds: 51297,
+
+              // unsubscribedMessageTypeIds: 62534,
+
+              // campaignId: 2915777,
+
+              // templateId: 3995505
+
+              //});
+
+            }
+
+          }
+
+        };
+
+        mParticle.Identity.login(identityRequest, identityCallback);
+
+        mParticle.Identity.logout(identityRequest, identityCallback);
+
+      }
+
+    );
+
   </script>
 
 </head>
