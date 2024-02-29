@@ -43,8 +43,22 @@
     </main>
 
     <script>
-      let campaignId = ""
-      let templateId = ""
+      function getCookie(cookieName) {
+        const name = cookieName + "=";
+        const decodedCookie = decodeURIComponent(document.cookie);
+        const cookieArray = decodedCookie.split(';');
+        
+        for(let i = 0; i < cookieArray.length; i++) {
+          let cookie = cookieArray[i].trim();
+          if (cookie.indexOf(name) === 0) {
+            return cookie.substring(name.length, cookie.length);
+          }
+        }
+        return "";
+      }
+
+      campaignId = getCookie("iterableEmailCampaignId");
+      templateId = getCookie("iterableTemplateId");
 
       // analytics.identify('SEGMENTCAR002', {
       //   favoriteCafeBeverage: "mocha",
@@ -77,8 +91,8 @@
       console.log('All Query Parameters:', allParameters);
 
       // Access specific parameters like campaignId and templateId
-      campaignId = allParameters['campaignId'];
-      templateId = allParameters['templateId'];
+      // campaignId = allParameters['campaignId'];
+      // templateId = allParameters['templateId'];
 
       // Output specific parameter values
       console.log('Campaign ID:', campaignId);
@@ -160,6 +174,11 @@
       $('#js-event-button').submit(event => {
         event.preventDefault();
         segmentEvent();
+        campaignId = getCookie("iterableEmailCampaignId");
+        templateId = getCookie("iterableTemplateId");
+        console.log('Campaign ID:', campaignId);
+      console.log('Template ID:', templateId);
+
         // 1. Create the product
 
         var product1 = mParticle.eCommerce.createProduct(
@@ -182,16 +201,31 @@
         );
 
         // 2. Summarize the transaction
+        if (campaignId != "" || templateId != "") {
+          var customAttributes = {}
+          if (campaignId) {
+            customAttributes.campaignId = campaignId
+          } 
+          if (templateId) {
+            customAttributes.templateId = templateId
+          }
+        } else {
+          var customAttributes = null
+        }
+        
+          
+        
         let oid = 'ORD-' + (Math.floor(Math.random() * 9000000) + 1000000);
         var transactionAttributes = {
-
+          campaignId: customAttributes.campaignId,
+          templateId: customAttributes.templateId,
           Id: oid,
           Revenue: 30.50,
           Tax: 30
         };
-
+     
         // 3. Log the purchase event (optional custom attributes an custom flags depending on your );
-        var customAttributes = null; // if not passing any custom attributes, pass null
+        // if not passing any custom attributes, pass null
         var customFlags = null; // if not passing any custom flags, pass null
         mParticle.eCommerce.logProductAction(
           mParticle.ProductActionType.Purchase,

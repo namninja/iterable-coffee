@@ -109,6 +109,22 @@
   </script>
 
   <script>
+    function getCookie(cookieName) {
+      const name = cookieName + "=";
+      const decodedCookie = decodeURIComponent(document.cookie);
+      const cookieArray = decodedCookie.split(';');
+
+      for (let i = 0; i < cookieArray.length; i++) {
+        let cookie = cookieArray[i].trim();
+        if (cookie.indexOf(name) === 0) {
+          return cookie.substring(name.length, cookie.length);
+        }
+      }
+      return "";
+    }
+
+    let campaignId = getCookie("iterableEmailCampaignId");
+    let templateId = getCookie("iterableTemplateId");
 
     window.mParticle.ready(
 
@@ -180,10 +196,24 @@
 
               );
 
+              if (campaignId != "" || templateId != "") {
+                var customAttributes = {}
+                if (campaignId) {
+                  customAttributes.campaignId = campaignId
+                }
+                if (templateId) {
+                  customAttributes.templateId = templateId
+                }
+              } else {
+                var customAttributes = null
+              }
+
+
               // 2. Summarize the transaction
               let oid = 'ORD-' + (Math.floor(Math.random() * 9000000) + 1000000);
               var transactionAttributes = {
-
+                campaignId: customAttributes.campaignId,
+                templateId: customAttributes.templateId,
                 Id: oid,
 
                 Revenue: 24.25,
@@ -194,7 +224,7 @@
 
               // 3. Log the purchase event (optional custom attributes an custom flags depending on your );
 
-              var customAttributes = null; // if not passing any custom attributes, pass null
+              // if not passing any custom attributes, pass null
 
               var customFlags = null; // if not passing any custom flags, pass null
 
