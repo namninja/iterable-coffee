@@ -142,9 +142,9 @@
 
           userIdentities: {
 
-            email: 'nam.ngo+mpart3@iterable.com',
+            email: 'nam.ngo+mpart4@iterable.com',
 
-            customerid: 'mpart3'
+            customerid: 'mpart4'
 
           }
 
@@ -163,6 +163,10 @@
               result.getUser().setUserAttribute('firstName', 'Scott');
 
               result.getUser().setUserAttribute('lastName', 'Lang');
+
+              result.getUser().setUserAttribute('FavoriteLocation_Loyalty', '017');
+
+              result.getUser().setUserAttribute('LoyaltyRanking', 10);
 
               mParticle.logEvent('Redeemed a reward', mParticle.EventType.Navigation, {
 
@@ -240,9 +244,9 @@
 
                 transactionAttributes);
 
-              //mParticle.logEvent('subscriptionsUpdated', mParticle.EventType.UserPreference, {
+              mParticle.logEvent('subscriptionsUpdated', mParticle.EventType.UserPreference, {
 
-              // emailListIds: 1198603,
+              emailListIds: "3407148"
 
               // unsubscribedChannelIds: 51297,
 
@@ -252,7 +256,7 @@
 
               // templateId: 3995505
 
-              //});
+              });
 
             }
 
@@ -262,7 +266,7 @@
 
         mParticle.Identity.login(identityRequest, identityCallback);
 
-        mParticle.Identity.logout(identityRequest, identityCallback);
+       
 
       }
 

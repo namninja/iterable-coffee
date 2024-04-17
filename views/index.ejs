@@ -30,7 +30,11 @@
         <form id="js-event-button">
           <input type="submit" value="Trigger Event">
         </form>
-       
+        <h2>Reset MParticle</h2>
+
+        <form id="js-reset-button">
+          <input type="submit" value="Trigger Event">
+        </form>
         </div>
         <div id="copyright">
           <hr />
@@ -47,8 +51,8 @@
         const name = cookieName + "=";
         const decodedCookie = decodeURIComponent(document.cookie);
         const cookieArray = decodedCookie.split(';');
-        
-        for(let i = 0; i < cookieArray.length; i++) {
+
+        for (let i = 0; i < cookieArray.length; i++) {
           let cookie = cookieArray[i].trim();
           if (cookie.indexOf(name) === 0) {
             return cookie.substring(name.length, cookie.length);
@@ -140,9 +144,9 @@
 
         userIdentities: {
 
-          email: 'nam.ngo+mpart3@iterable.com',
+          email: 'nam.ngo+mpart4@iterable.com',
 
-          customerid: 'mpart3'
+          customerid: 'mpart4'
 
         }
 
@@ -153,23 +157,20 @@
         if (result.httpCode == 200) {
 
           if (result.getUser()) {
-
-            result.getUser().setUserAttribute('isLoyaltyMember', true);
-
-            result.getUser().setUserAttribute('LoyaltyMemberSince', '2023-09-26 12:13:35');
-
-            result.getUser().setUserAttribute('firstName', 'Scott');
-
-            result.getUser().setUserAttribute('lastName', 'Lang');
+            result.getUser().setUserAttribute('SMSFormSubmit_Status', true);
+            result.getUser().setUserAttribute("SMSSubscribe_Status", false);
+            result.getUser().setUserAttribute("$Mobile", "185852294679");
+            result.getUser().setUserAttribute('firstName', 'Thor');
+            result.getUser().setUserAttribute('lastName', 'Odinson');
+            result.getUser().setUserAttribute('FavoriteLocation_Loyalty', '#017');
+              result.getUser().setUserAttribute('LoyaltyRanking', 7);
           }
         }
       }
       $('#js-mpartli-button').submit(event => {
         event.preventDefault();
-
         mParticle.Identity.login(identityRequest, identityCallback);
       })
-
 
       $('#js-event-button').submit(event => {
         event.preventDefault();
@@ -177,69 +178,87 @@
         campaignId = getCookie("iterableEmailCampaignId");
         templateId = getCookie("iterableTemplateId");
         console.log('Campaign ID:', campaignId);
-      console.log('Template ID:', templateId);
-
-        // 1. Create the product
-
-        var product1 = mParticle.eCommerce.createProduct(
-          'Iced Mocha', // Name
-          'mocha-iced-large', // SKU
-          8, // Price
-          2 // Quantity
-        );
-        var product2 = mParticle.eCommerce.createProduct(
-          'Caramel Macchiato',
-          'cm-hot-large',
-          8.25,
-          1
-        );
-        var product3 = mParticle.eCommerce.createProduct(
-          'Cappuccino',
-          'cap-hot-medium',
-          6.25,
-          1
-        );
-
-        // 2. Summarize the transaction
-        if (campaignId != "" || templateId != "") {
-          var customAttributes = {}
-          if (campaignId) {
-            customAttributes.campaignId = campaignId
-          } 
-          if (templateId) {
-            customAttributes.templateId = templateId
-          }
-        } else {
-          var customAttributes = null
-        }
+        console.log('Template ID:', templateId);
         
-          
-        
-        let oid = 'ORD-' + (Math.floor(Math.random() * 9000000) + 1000000);
-        var transactionAttributes = {
-          campaignId: customAttributes.campaignId,
-          templateId: customAttributes.templateId,
-          Id: oid,
-          Revenue: 30.50,
-          Tax: 30
-        };
-     
-        // 3. Log the purchase event (optional custom attributes an custom flags depending on your );
-        // if not passing any custom attributes, pass null
-        var customFlags = null; // if not passing any custom flags, pass null
-        mParticle.eCommerce.logProductAction(
-          mParticle.ProductActionType.Purchase,
-          [product1, product2, product3],
-          customAttributes,
-          customFlags,
-          transactionAttributes);
+       
+        // // 1. Create the product
 
+        // var product1 = mParticle.eCommerce.createProduct(
+        //   'Iced Mocha', // Name
+        //   'mocha-iced-large', // SKU
+        //   8, // Price
+        //   2 // Quantity
+        // );
+        // var product2 = mParticle.eCommerce.createProduct(
+        //   'Caramel Macchiato',
+        //   'cm-hot-large',
+        //   8.25,
+        //   1
+        // );
+        // var product3 = mParticle.eCommerce.createProduct(
+        //   'Cappuccino',
+        //   'cap-hot-medium',
+        //   6.25,
+        //   1
+        // );
+
+        // // 2. Summarize the transaction
+        // if (campaignId != "" || templateId != "") {
+        //   var customAttributes = {}
+        //   if (campaignId) {
+        //     customAttributes.campaignId = campaignId
+        //   } 
+        //   if (templateId) {
+        //     customAttributes.templateId = templateId
+        //   }
+        // } else {
+        //   var customAttributes = null
+        // }
+
+
+
+        // let oid = 'ORD-' + (Math.floor(Math.random() * 9000000) + 1000000);
+        // var transactionAttributes = {
+        //   campaignId: customAttributes.campaignId,
+        //   templateId: customAttributes.templateId,
+        //   Id: oid,
+        //   Revenue: 30.50,
+        //   Tax: 30
+        // };
+
+        // // 3. Log the purchase event (optional custom attributes an custom flags depending on your );
+        // // if not passing any custom attributes, pass null
+        // var customFlags = null; // if not passing any custom flags, pass null
+        // mParticle.eCommerce.logProductAction(
+        //   mParticle.ProductActionType.Purchase,
+        //   [product1, product2, product3],
+        //   customAttributes,
+        //   customFlags,
+        //   transactionAttributes);
+       
+
+   
       });
+      $('#js-reset-button').submit(event => {
+        event.preventDefault();
+        segmentEvent();
+        campaignId = getCookie("iterableEmailCampaignId");
+        templateId = getCookie("iterableTemplateId");
+        console.log('Campaign ID:', campaignId);
+        console.log('Template ID:', templateId);
+        
+        var currentUser = mParticle.Identity.getCurrentUser();
+        currentUser.removeUserAttribute("SMSFormSubmit_Status");
+        currentUser.removeUserAttribute("SMSSubscribe_Status");
+        currentUser.removeUserAttribute("$Mobile");
+       
+      })
     </script>
     <script>
 
-      mParticle.logEvent('mparticle_test', mParticle.EventType.Navigation, {});
+        
     </script>
+   
     <%- include('scripts', {}); %>
   </body>
 

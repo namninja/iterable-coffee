@@ -1,19 +1,20 @@
 {
-    "applinks": {
-      "apps": [],
-      "details": [
-        {
-          "appID": "454L9NG9J9.com.ReiterableCoffee.IterableCoffee",
-          "paths": [
-            "/publicmenu/*"
-          ]
-        },
-        {
-          "appID": "454L9NG9J9.com.IterablePizza.IterableRNTest",
-          "paths": [
-            "/publicmenu/*"
-          ]
-        }
-      ]
-    }
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "454L9NG9J9.com.ReiterableCoffee.IterableCoffee",
+          "454L9NG9J9.com.IterablePizza.IterableRNTest",
+          "454L9NG9J9.com.IterablePizza.IterableTiger"
+        ],
+        "components": [
+          {
+            "/": "/publicmenu/*",
+            "exclude": false,
+            "comment": "Matches any URL with a path that starts with /publicmenu/."
+          }
+        ]
+      }
+    ]
   }
+}
