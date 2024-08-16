@@ -140,36 +140,41 @@
         // Do not delete the this
         console.log("Success! Segment Event Triggered");
       }
-      var identityRequest = {
+      // var identityRequest = {
+      //   userIdentities: {
+      //     email: 'nam.ngo+mpart4@iterable.com',
+      //     customerid: 'mpart4'
 
-        userIdentities: {
+      //   }
 
-          email: 'nam.ngo+mpart4@iterable.com',
+      // };
 
-          customerid: 'mpart4'
+      // var identityCallback = function (result) {
 
-        }
+      //   if (result.httpCode == 200) {
 
-      };
-
-      var identityCallback = function (result) {
-
-        if (result.httpCode == 200) {
-
-          if (result.getUser()) {
-            result.getUser().setUserAttribute('SMSFormSubmit_Status', true);
-            result.getUser().setUserAttribute("SMSSubscribe_Status", false);
-            result.getUser().setUserAttribute("$Mobile", "185852294679");
-            result.getUser().setUserAttribute('firstName', 'Thor');
-            result.getUser().setUserAttribute('lastName', 'Odinson');
-            result.getUser().setUserAttribute('FavoriteLocation_Loyalty', '#017');
-              result.getUser().setUserAttribute('LoyaltyRanking', 7);
-          }
-        }
-      }
+      //     if (result.getUser()) {
+      //       result.getUser().setUserAttribute('SMSFormSubmit_Status', true);
+      //       result.getUser().setUserAttribute("SMSSubscribe_Status", false);
+      //       result.getUser().setUserAttribute("$Mobile", "185852294679");
+      //       result.getUser().setUserAttribute('firstName', 'Thor');
+      //       result.getUser().setUserAttribute('lastName', 'Odinson');
+      //       result.getUser().setUserAttribute('FavoriteLocation_Loyalty', '#017');
+      //       result.getUser().setUserAttribute('LoyaltyRanking', 7);
+      //     }
+      //   }
+      // }
       $('#js-mpartli-button').submit(event => {
         event.preventDefault();
-        mParticle.Identity.login(identityRequest, identityCallback);
+        var date = new Date('12/31/2023');
+        var timestamp_ms = date.getTime();
+        console.log(timestamp_ms);
+        mParticle.logEvent(
+          'generic_mParticle_event',
+          mParticle.EventType.Other,
+          { 'category': 'Destination Intro', 'title': 'Paris' }
+        );
+        amplitude.init('7d88b2a412f7a76f46daf4cef67d6380', 'nam.ngo+ios9@iterable.com');
       })
 
       $('#js-event-button').submit(event => {
@@ -179,8 +184,48 @@
         templateId = getCookie("iterableTemplateId");
         console.log('Campaign ID:', campaignId);
         console.log('Template ID:', templateId);
-        
+        const eventProperties = {
+          buttonColor: 'primary',
+        };
+        amplitude.track('Button Clicked', eventProperties);
        
+  const purchData = {
+  "id": "ORDER12345",
+  "user": {
+    "email": "nam.ngo+ios9@iterable.com"
+  },
+  "items": [
+    {
+      "id": "1",
+      "sku": "1",
+      "name": "House Blend",
+      "description": "Our house blend. Contains notes of chocolate and berries.",
+      "categories": [
+        "blend","whole bean"
+      ],
+      "price": 12.00,
+      "quantity": 1,
+      "imageUrl": "https://images.unsplash.com/photo-1559056199-96c307526265",
+      "url": "https://reiterablecoffee.com?coffee=ethiopian"
+    },
+     {
+      "id": "2",
+      "sku": "2",
+      "name": "Ethiopian",
+      "description": "Lightly roasted beans from our roaster in Ethiopia with notes of dried apricot, chamomile, honey, and almond.",
+      "categories": [
+        "single origin","whole bean"
+      ],
+      "price": 14.00,
+      "quantity": 1,
+      "imageUrl": "https://images.unsplash.com/photo-1592250819999-c00fed586048",
+      "url": "https://reiterablecoffee.com?coffee=ethiopian"
+    }
+  ],
+  "total": 26.00
+}
+amplitude.track('Purchase', purchData);
+
         // // 1. Create the product
 
         // var product1 = mParticle.eCommerce.createProduct(
@@ -235,9 +280,9 @@
         //   customAttributes,
         //   customFlags,
         //   transactionAttributes);
-       
 
-   
+
+
       });
       $('#js-reset-button').submit(event => {
         event.preventDefault();
@@ -246,19 +291,24 @@
         templateId = getCookie("iterableTemplateId");
         console.log('Campaign ID:', campaignId);
         console.log('Template ID:', templateId);
-        
+
         var currentUser = mParticle.Identity.getCurrentUser();
         currentUser.removeUserAttribute("SMSFormSubmit_Status");
         currentUser.removeUserAttribute("SMSSubscribe_Status");
         currentUser.removeUserAttribute("$Mobile");
-       
+        const ampEvent = new amplitude.Revenue()
+          .setProductId('com.company.productId')
+          .setPrice(3.99)
+          .setQuantity(3);
+
+        amplitude.revenue(ampEvent);
       })
+
     </script>
     <script>
 
-        
     </script>
-   
+
     <%- include('scripts', {}); %>
   </body>
 

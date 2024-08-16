@@ -108,6 +108,13 @@
 
   </script>
 
+  <script type="text/javascript">
+    !function(){"use strict";!function(e,t){var r=e.amplitude||{_q:[],_iq:{}};if(r.invoked)e.console&&console.error&&console.error("Amplitude snippet has been loaded.");else{var n=function(e,t){e.prototype[t]=function(){return this._q.push({name:t,args:Array.prototype.slice.call(arguments,0)}),this}},s=function(e,t,r){return function(n){e._q.push({name:t,args:Array.prototype.slice.call(r,0),resolve:n})}},o=function(e,t,r){e._q.push({name:t,args:Array.prototype.slice.call(r,0)})},i=function(e,t,r){e[t]=function(){if(r)return{promise:new Promise(s(e,t,Array.prototype.slice.call(arguments)))};o(e,t,Array.prototype.slice.call(arguments))}},a=function(e){for(var t=0;t<m.length;t++)i(e,m[t],!1);for(var r=0;r<g.length;r++)i(e,g[r],!0)};r.invoked=!0;var c=t.createElement("script");c.type="text/javascript",c.integrity="sha384-BWw9N39aN+4SdxZuwmRR0StXCLA+Bre4jR6bJt+pM1IqONNALC5rf25NkWMTyta5",c.crossOrigin="anonymous",c.async=!0,c.src="https://cdn.amplitude.com/libs/analytics-browser-2.9.3-min.js.gz",c.onload=function(){e.amplitude.runQueuedFunctions||console.log("[Amplitude] Error: could not load SDK")};var u=t.getElementsByTagName("script")[0];u.parentNode.insertBefore(c,u);for(var l=function(){return this._q=[],this},p=["add","append","clearAll","prepend","set","setOnce","unset","preInsert","postInsert","remove","getUserProperties"],d=0;d<p.length;d++)n(l,p[d]);r.Identify=l;for(var f=function(){return this._q=[],this},v=["getEventProperties","setProductId","setQuantity","setPrice","setRevenue","setRevenueType","setEventProperties"],y=0;y<v.length;y++)n(f,v[y]);r.Revenue=f;var m=["getDeviceId","setDeviceId","getSessionId","setSessionId","getUserId","setUserId","setOptOut","setTransport","reset","extendSession"],g=["init","add","remove","track","logEvent","identify","groupIdentify","setGroup","revenue","flush"];a(r),r.createInstance=function(e){return r._iq[e]={_q:[]},a(r._iq[e]),r._iq[e]},e.amplitude=r}}(window,document)}();
+    
+    amplitude.init("7d88b2a412f7a76f46daf4cef67d6380", {
+  defaultTracking: true,
+});
+    </script>
   <script>
     function getCookie(cookieName) {
       const name = cookieName + "=";
@@ -142,9 +149,9 @@
 
           userIdentities: {
 
-            email: 'nam.ngo+mpart4@iterable.com',
+            email: 'nam.ngo+mpart5@iterable.com',
 
-            customerid: 'mpart4'
+            customerid: 'mpart5'
 
           }
 
@@ -157,15 +164,10 @@
             if (result.getUser()) {
 
               result.getUser().setUserAttribute('isLoyaltyMember', true);
-
               result.getUser().setUserAttribute('LoyaltyMemberSince', '2023-09-26 12:13:35');
-
               result.getUser().setUserAttribute('firstName', 'Scott');
-
               result.getUser().setUserAttribute('lastName', 'Lang');
-
-              result.getUser().setUserAttribute('FavoriteLocation_Loyalty', '017');
-
+              result.getUser().setUserAttribute('FavoriteLocation_Loyalty', '#017');
               result.getUser().setUserAttribute('LoyaltyRanking', 10);
 
               mParticle.logEvent('Redeemed a reward', mParticle.EventType.Navigation, {
