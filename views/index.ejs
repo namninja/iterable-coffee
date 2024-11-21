@@ -36,6 +36,9 @@
           <input type="submit" value="Trigger Event">
         </form>
         </div>
+        <button id="sendSms">Send a Text</button>
+
+  
         <div id="copyright">
           <hr />
           <a href="https://github.com/namninja" target="_blank">
@@ -45,7 +48,13 @@
         </div>
       </footer>
     </main>
-
+    <script>
+      document.getElementById('sendSms').addEventListener('click', () => {
+        const message = encodeURIComponent("Hi there! How are you?");
+        // Open SMS app with a blank recipient
+        window.location.href = `sms:?body=${message}`;
+      });
+    </script>
     <script>
       function getCookie(cookieName) {
         const name = cookieName + "=";
